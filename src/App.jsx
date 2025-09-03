@@ -10,7 +10,7 @@ function App() {
               src={DataImage.HeroImage}
               alt="Hero Image"
               className="w-10 rounded-md"/>
-            <q>Usaha tidak menghianati Hasil</q>
+            <q>Usaha tidak menghianati Hasil test vercel</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hi,Saya Leo satria</h1>
           <p className="text-base/loose mb-6 opacity-50">Berdasarkan jalur yang Anda berikan, berikut adalah perintah lengkap yang bisa Anda jalankan di terminal Laragon untuk menimpa database smesta_id dengan file SQL yang baru. Setelah Anda menjalankan perintah ini, tunggu beberapa saat. Tergantung pada ukuran file .sql, proses ini mungkin memakan waktu beberapa detik hingga beberapa menit. Jika tidak ada pesan error yang muncul, berarti proses penimpaan database telah berhasil.
