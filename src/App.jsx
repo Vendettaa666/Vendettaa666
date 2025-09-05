@@ -1,6 +1,5 @@
 import DataImage from "./data";
-import {listTools, listProyek } from "./data";
-
+import { listTools, listProyek } from "./data";
 
 function App() {
   return (
@@ -8,6 +7,12 @@ function App() {
       <div className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 gap-6 grid-cols-1">
         <div>
           <div className="display flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+            <img
+              src={DataImage.HeroImage}
+              alt="hero image"
+              className="w-10 rounded-md"
+              loading="lazy"
+            />
             <q>Usaha tidak menghianati Hasil test vercel</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">Hi,Saya Leo satria</h1>
@@ -39,6 +44,7 @@ function App() {
           src={DataImage.HeroImage}
           alt="Hero Image"
           className="w-[400px] md:ml-auto"
+          loading="lazy"
         />
       </div>
 
@@ -121,28 +127,42 @@ function App() {
         <p className="text-base/loose text-center opacity-50 ">
           beberapa proyek yang saya kerjakan
         </p>
-        <div className="proyek-box mt-14 grid grid-cols-3 gap-4 ">
+        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
           {listProyek.map((proyek) => (
-            <div key={proyek.id}>
-              <img src={proyek.gambar} alt="proyek" />
+            <div key={proyek.id} className="p-4 bg-zinc-800 ">
+              <img src={proyek.gambar} alt="proyek" loading="lazy" />
               <div>
                 <h1 className="text-2xl font-bold my-4 ">{proyek.nama}</h1>
                 <p className="text-base/loose mb-4">{proyek.desk}</p>
                 <div className="flex flex-wrap gap-2 ">
                   {proyek.tools.map((tool, index) => (
-                    <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
+                    <p
+                      className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold"
+                      key={index}
+                    >
+                      {tool}
+                    </p>
                   ))}
                 </div>
-                <div className="">
-                  <a href=""> Lihat website</a>
+                <div className="mt-8 text-center ">
+                  <a
+                    href=""
+                    className="bg-violet-700 p-4 rounded-lg block border border-zinc-600 hover:bg-violet-600"
+                  >
+                    {" "}
+                    Lihat website
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* contact */}
+      <div className="kontak mt-32 p-10 ">Contact</div>
     </>
   );
 }
 
-export default App
+export default App;
