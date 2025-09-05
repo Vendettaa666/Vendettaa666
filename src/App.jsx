@@ -124,16 +124,16 @@ function App() {
         <div className="proyek-box mt-14 grid grid-cols-3 gap-4 ">
           {listProyek.map((proyek) => (
             <div key={proyek.id}>
-              <img src={proyek.gambar} alt="proyek" className="w-full " />
+              <img src={proyek.gambar} alt="proyek" />
               <div>
-                <h1>{proyek.nama}</h1>
-                <p>{proyek.desk}</p>
-                <div>
-                  {proyek.tools.map(tool, index => (
-                    <p key={index}>{tool}</p>
+                <h1 className="text-2xl font-bold my-4 ">{proyek.nama}</h1>
+                <p className="text-base/loose mb-4">{proyek.desk}</p>
+                <div className="flex flex-wrap gap-2 ">
+                  {proyek.tools.map((tool, index) => (
+                    <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
                   ))}
                 </div>
-                <div>
+                <div className="">
                   <a href=""> Lihat website</a>
                 </div>
               </div>
