@@ -4,7 +4,10 @@ import { listTools, listProyek } from "./data";
 function App() {
   return (
     <>
-      <div className="hero grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center min-h-screen lg:min-h-0">
+      <div
+        id="hero"
+        className="hero grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center min-h-screen lg:min-h-0"
+      >
         <div className="order-2 lg:order-1 text-center lg:text-left">
           <div className="display flex items-center justify-center lg:justify-start gap-3 mb-6 bg-zinc-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
             <img
@@ -13,22 +16,25 @@ function App() {
               className="w-8 sm:w-10 rounded-md"
               loading="lazy"
             />
-            <q className="text-xs sm:text-sm">Usaha tidak menghianati Hasil test vercel</q>
+            <q className="text-xs sm:text-sm">
+              Usaha tidak menghianati Hasil test vercel
+            </q>
           </div>
-          
+
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
             Hi, Saya <span className="text-violet-400">Leo Satria</span>
           </h1>
-          
+
           <h2 className="text-lg sm:text-xl lg:text-2xl text-violet-300 font-semibold mb-4 lg:mb-6">
             Full Stack Developer
           </h2>
-          
+
           <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
-            Passionate web developer dengan 4+ tahun pengalaman dalam membangun aplikasi web modern. 
-            Spesialisasi dalam React, Node.js, dan teknologi terkini untuk menciptakan solusi digital yang inovatif.
+            Passionate web developer dengan 4+ tahun pengalaman dalam membangun
+            aplikasi web modern. Spesialisasi dalam React, Node.js, dan
+            teknologi terkini untuk menciptakan solusi digital yang inovatif.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
             <a
               href=""
@@ -43,26 +49,32 @@ function App() {
               Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-2"></i>
             </a>
           </div>
-          
+
           {/* Quick Stats */}
           <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
             <div className="text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">45+</h3>
+              <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">
+                45+
+              </h3>
               <p className="text-xs lg:text-sm opacity-75">Projects</p>
             </div>
             <div className="w-px h-12 bg-zinc-600"></div>
             <div className="text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">4+</h3>
+              <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">
+                4+
+              </h3>
               <p className="text-xs lg:text-sm opacity-75">Years Exp</p>
             </div>
             <div className="w-px h-12 bg-zinc-600"></div>
             <div className="text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">100%</h3>
+              <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">
+                100%
+              </h3>
               <p className="text-xs lg:text-sm opacity-75">Satisfied</p>
             </div>
           </div>
         </div>
-        
+
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
           <div className="relative">
             <img
@@ -79,7 +91,7 @@ function App() {
       </div>
 
       {/* About */}
-      <div className="about mt-32 py-10">
+      <div id="about" className="about mt-32 py-10">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg ">
           <img
             src={DataImage.HeroImage}
@@ -152,16 +164,18 @@ function App() {
       </div>
 
       {/* Skills */}
-      <div className="skills mt-32 py-10">
+      <div id="skills" className="skills mt-32 py-10">
         <h1 className="text-center text-4xl font-bold mb-4">Skills</h1>
         <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto">
           Keahlian teknis dan non-teknis yang saya miliki dalam pengembangan web
         </p>
-        
+
         <div className="skills-container mt-14 grid lg:grid-cols-2 grid-cols-1 gap-8">
           {/* Technical Skills */}
           <div className="p-6 bg-zinc-800 rounded-lg">
-            <h2 className="text-2xl font-bold mb-6 text-violet-400">Technical Skills</h2>
+            <h2 className="text-2xl font-bold mb-6 text-violet-400">
+              Technical Skills
+            </h2>
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between mb-2">
@@ -169,55 +183,74 @@ function App() {
                   <span className="text-violet-400">90%</span>
                 </div>
                 <div className="w-full bg-zinc-700 rounded-full h-2">
-                  <div className="bg-violet-500 h-2 rounded-full" style={{width: '90%'}}></div>
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "90%" }}
+                  ></div>
                 </div>
               </div>
-              
+
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">React/Next.js</span>
                   <span className="text-violet-400">85%</span>
                 </div>
                 <div className="w-full bg-zinc-700 rounded-full h-2">
-                  <div className="bg-violet-500 h-2 rounded-full" style={{width: '85%'}}></div>
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "85%" }}
+                  ></div>
                 </div>
               </div>
-              
+
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">Node.js/Express</span>
                   <span className="text-violet-400">80%</span>
                 </div>
                 <div className="w-full bg-zinc-700 rounded-full h-2">
-                  <div className="bg-violet-500 h-2 rounded-full" style={{width: '80%'}}></div>
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "80%" }}
+                  ></div>
                 </div>
               </div>
-              
+
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-semibold">Database (MySQL/MongoDB)</span>
+                  <span className="font-semibold">
+                    Database (MySQL/MongoDB)
+                  </span>
                   <span className="text-violet-400">75%</span>
                 </div>
                 <div className="w-full bg-zinc-700 rounded-full h-2">
-                  <div className="bg-violet-500 h-2 rounded-full" style={{width: '75%'}}></div>
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "75%" }}
+                  ></div>
                 </div>
               </div>
-              
+
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">UI/UX Design</span>
                   <span className="text-violet-400">70%</span>
                 </div>
                 <div className="w-full bg-zinc-700 rounded-full h-2">
-                  <div className="bg-violet-500 h-2 rounded-full" style={{width: '70%'}}></div>
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "70%" }}
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
-          
+
           {/* Soft Skills */}
           <div className="p-6 bg-zinc-800 rounded-lg">
-            <h2 className="text-2xl font-bold mb-6 text-violet-400">Soft Skills</h2>
+            <h2 className="text-2xl font-bold mb-6 text-violet-400">
+              Soft Skills
+            </h2>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
                 <i className="ri-team-line ri-2x text-violet-400 mb-3 block"></i>
@@ -257,7 +290,12 @@ function App() {
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
           {listProyek.map((proyek) => (
             <div key={proyek.id} className="p-4 bg-zinc-800 rounded-lg">
-              <img src={proyek.gambar} alt="proyek" loading="lazy" className="rounded-lg"/>
+              <img
+                src={proyek.gambar}
+                alt="proyek"
+                loading="lazy"
+                className="rounded-lg"
+              />
               <div>
                 <h1 className="text-2xl font-bold my-4 ">{proyek.nama}</h1>
                 <p className="text-base/loose mb-4">{proyek.desk}</p>
@@ -286,18 +324,21 @@ function App() {
       </div>
 
       {/* Contact */}
-      <div className="kontak mt-32 py-10">
+      <div id="kontak" className="kontak mt-64 py-10">
         <h1 className="text-center text-4xl font-bold mb-4">Contact</h1>
         <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto mb-14">
-          Mari berdiskusi tentang proyek Anda. Saya siap membantu mewujudkan ide digital Anda
+          Mari berdiskusi tentang proyek Anda. Saya siap membantu mewujudkan ide
+          digital Anda
         </p>
-        
+
         <div className="contact-container grid lg:grid-cols-2 grid-cols-1 gap-8">
           {/* Contact Info */}
           <div className="space-y-6">
             <div className="p-6 bg-zinc-800 rounded-lg">
-              <h2 className="text-2xl font-bold mb-6 text-violet-400">Get In Touch</h2>
-              
+              <h2 className="text-2xl font-bold mb-6 text-violet-400">
+                Get In Touch
+              </h2>
+
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-zinc-700 rounded-lg hover:bg-zinc-600 transition-colors">
                   <i className="ri-mail-line ri-xl text-violet-400"></i>
@@ -306,7 +347,7 @@ function App() {
                     <p className="opacity-75">leosatria@example.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 p-4 bg-zinc-700 rounded-lg hover:bg-zinc-600 transition-colors">
                   <i className="ri-phone-line ri-xl text-violet-400"></i>
                   <div>
@@ -314,7 +355,7 @@ function App() {
                     <p className="opacity-75">+62 812-3456-7890</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 p-4 bg-zinc-700 rounded-lg hover:bg-zinc-600 transition-colors">
                   <i className="ri-map-pin-line ri-xl text-violet-400"></i>
                   <div>
@@ -323,71 +364,93 @@ function App() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Social Links */}
               <div className="mt-8">
                 <h3 className="font-semibold mb-4">Follow Me</h3>
                 <div className="flex gap-4">
-                  <a href="#" className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors">
+                  <a
+                    href="#"
+                    className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors"
+                  >
                     <i className="ri-github-line ri-xl"></i>
                   </a>
-                  <a href="#" className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors">
+                  <a
+                    href="#"
+                    className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors"
+                  >
                     <i className="ri-linkedin-line ri-xl"></i>
                   </a>
-                  <a href="#" className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors">
+                  <a
+                    href="#"
+                    className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors"
+                  >
                     <i className="ri-instagram-line ri-xl"></i>
                   </a>
-                  <a href="#" className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors">
+                  <a
+                    href="#"
+                    className="p-3 bg-zinc-700 rounded-lg hover:bg-violet-600 transition-colors"
+                  >
                     <i className="ri-twitter-line ri-xl"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="p-6 bg-zinc-800 rounded-lg">
-            <h2 className="text-2xl font-bold mb-6 text-violet-400">Send Message</h2>
+            <h2 className="text-2xl font-bold mb-6 text-violet-400">
+              Send Message
+            </h2>
             <form className="space-y-4">
               <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Nama</label>
-                  <input 
-                    type="text" 
+                  <label className="block text-sm font-semibold mb-2">
+                    Nama
+                  </label>
+                  <input
+                    type="text"
                     className="w-full p-3 bg-zinc-700 rounded-lg border border-zinc-600 focus:border-violet-500 focus:outline-none"
                     placeholder="Nama lengkap"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Email</label>
-                  <input 
-                    type="email" 
+                  <label className="block text-sm font-semibold mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
                     className="w-full p-3 bg-zinc-700 rounded-lg border border-zinc-600 focus:border-violet-500 focus:outline-none"
                     placeholder="email@example.com"
                   />
                 </div>
               </div>
-              
+
               <div>
-                <label className="block text-sm font-semibold mb-2">Subject</label>
-                <input 
-                  type="text" 
+                <label className="block text-sm font-semibold mb-2">
+                  Subject
+                </label>
+                <input
+                  type="text"
                   className="w-full p-3 bg-zinc-700 rounded-lg border border-zinc-600 focus:border-violet-500 focus:outline-none"
                   placeholder="Topik pesan"
                 />
               </div>
-              
+
               <div>
-                <label className="block text-sm font-semibold mb-2">Pesan</label>
-                <textarea 
-                  rows="5" 
+                <label className="block text-sm font-semibold mb-2">
+                  Pesan
+                </label>
+                <textarea
+                  rows="5"
                   className="w-full p-3 bg-zinc-700 rounded-lg border border-zinc-600 focus:border-violet-500 focus:outline-none resize-none"
                   placeholder="Tulis pesan Anda disini..."
                 ></textarea>
               </div>
-              
-              <button 
-                type="submit" 
+
+              <button
+                type="submit"
                 className="w-full bg-violet-700 p-4 rounded-lg hover:bg-violet-600 transition-colors font-semibold"
               >
                 Kirim Pesan <i className="ri-send-plane-line ri-lg ml-2"></i>
@@ -395,10 +458,10 @@ function App() {
             </form>
           </div>
         </div>
-        
+
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-zinc-700 text-center">
-          <p className="opacity-50">© 2024 Leo Satria. All rights reserved.</p>
+          <p className="opacity-50">© 2025 Leo Satria. All rights reserved.</p>
         </div>
       </div>
     </>

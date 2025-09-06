@@ -1,50 +1,189 @@
 import { useState, useEffect } from "react";
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
-        setActive(true);
-      }
-      else {
-        setActive(false);
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Fungsi untuk scroll ke section
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = navbar ? navbar.offsetHeight : 64; // fallback 64px
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementPosition - navbarHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <div className="navbar py-7 flex justify-between items-center">
-      <div className="logo">
-        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white">Portofolio</h1>
+    <nav className={`navbar py-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-zinc-900/90 backdrop-blur-md' : 'bg-transparent'}`}>
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
+        <div className="logo">
+          <h1 className="text-2xl md:text-3xl font-bold text-white">Portofolio</h1>
+        </div>
+        
+        <ul className={`menu hidden md:flex flex-row items-center gap-6 text-white`}>
+          <li>
+            <a 
+              href="#home" 
+              className="text-base font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('home');
+              }}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#about" 
+              className="text-base font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
+            >
+              About me
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#skills" 
+              className="text-base font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('skills');
+              }}
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#proyek" 
+              className="text-base font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('proyek');
+              }}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#kontak" 
+              className="text-base font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('kontak');
+              }}
+            >
+              Contact me
+            </a>
+          </li>
+        </ul>
+
+        {/* Mobile menu button */}
+        <button 
+          className="md:hidden text-white"
+          onClick={() => setActive(!active)}
+        >
+          <i className={`ri-${active ? 'close' : 'menu'}-line ri-2x`}></i>
+        </button>
       </div>
-      <ul className={`menu flex flex-row items-center gap-4 sm:gap-6 md:static fixed left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl md:bg-transparent transition-all duration-300 whitespace-nowrap ${active ? "top-0 opacity-100 z-50" : "-top-20 opacity-0"
-        }`}>
-        <li>
-          <a href="" className="sm:text-lg text-base font-medium">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="" className="sm:text-lg text-base font-medium">
-            About me
-          </a>
-        </li>
-        <li>
-          <a href="" className="sm:text-lg text-base font-medium">
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="" className="sm:text-lg text-base font-medium">
-            Contact me
-          </a>
-        </li>
-      </ul>
-    </div>
+
+      {/* Mobile menu */}
+      <div className={`md:hidden fixed top-16 left-0 right-0 bg-zinc-900/95 backdrop-blur-md transition-all duration-300 ${active ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'}`}>
+        <ul className="flex flex-col items-center py-6 gap-4 text-white">
+          <li>
+            <a 
+              href="#home" 
+              className="text-lg font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('home');
+                setActive(false);
+              }}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#about" 
+              className="text-lg font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+                setActive(false);
+              }}
+            >
+              About me
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#skills" 
+              className="text-lg font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('skills');
+                setActive(false);
+              }}
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#proyek" 
+              className="text-lg font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('proyek');
+                setActive(false);
+              }}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#kontak" 
+              className="text-lg font-medium hover:text-violet-400 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('kontak');
+                setActive(false);
+              }}
+            >
+              Contact me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 
-export default Navbar
+export default Navbar;
