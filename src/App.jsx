@@ -16,9 +16,7 @@ function App() {
               className="w-8 sm:w-10 rounded-md"
               loading="lazy"
             />
-            <q className="text-xs sm:text-sm">
-              Usaha tidak menghianati Hasil test vercel
-            </q>
+            <q className="text-xs sm:text-sm">Front end Developer</q>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
@@ -26,7 +24,7 @@ function App() {
           </h1>
 
           <h2 className="text-lg sm:text-xl lg:text-2xl text-violet-300 font-semibold mb-4 lg:mb-6">
-            Full Stack Developer
+            Front end Developer
           </h2>
 
           <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
@@ -54,14 +52,14 @@ function App() {
           <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
             <div className="text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">
-                45+
+                2+
               </h3>
               <p className="text-xs lg:text-sm opacity-75">Projects</p>
             </div>
             <div className="w-px h-12 bg-zinc-600"></div>
             <div className="text-center">
               <h3 className="text-2xl lg:text-3xl font-bold text-violet-400">
-                4+
+                1+
               </h3>
               <p className="text-xs lg:text-sm opacity-75">Years Exp</p>
             </div>
@@ -344,7 +342,7 @@ function App() {
                   <i className="ri-mail-line ri-xl text-violet-400"></i>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="opacity-75">leosatria@example.com</p>
+                    <p className="opacity-75">leoarkas@gmail.com</p>
                   </div>
                 </div>
 
@@ -352,7 +350,7 @@ function App() {
                   <i className="ri-phone-line ri-xl text-violet-400"></i>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="opacity-75">+62 812-3456-7890</p>
+                    <p className="opacity-75">+62 898-0354-156</p>
                   </div>
                 </div>
 
@@ -360,7 +358,7 @@ function App() {
                   <i className="ri-map-pin-line ri-xl text-violet-400"></i>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="opacity-75">Jakarta, Indonesia</p>
+                    <p className="opacity-75">Lumajang - Jawatimur - Indonesia</p>
                   </div>
                 </div>
               </div>
