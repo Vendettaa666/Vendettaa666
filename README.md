@@ -80,14 +80,14 @@
 
 <table align="center">
   <tr>
-    <td><img src="img/gif1.gif" width="180" alt="Gallery 1"/></td>
-    <td><img src="img/gif2.gif" width="180" alt="Gallery 2"/></td>
-    <td><img src="img/gif3.gif" width="180" alt="Gallery 3"/></td>
+    <td><img src="public\assets\img-readme\gif1.gif" width="180" alt="Gallery 1"/></td>
+    <td><img src="public\assets\img-readme\gif2.gif" width="180" alt="Gallery 2"/></td>
+    <td><img src="public\assets\img-readme\gif3.gif" width="180" alt="Gallery 3"/></td>
   </tr>
   <tr>
-    <td><img src="img/gif4.gif" width="180" alt="Gallery 4"/></td>
-    <td><img src="img/gif5.gif" width="180" alt="Gallery 5"/></td>
-    <td><img src="img/gif6.gif" width="180" alt="Gallery 6"/></td>
+    <td><img src="public\assets\img-readme\gif4.gif" width="180" alt="Gallery 4"/></td>
+    <td><img src="public\assets\img-readme\gif5.gif" width="180" alt="Gallery 5"/></td>
+    <td><img src="public\assets\img-readme\gif6.gif" width="180" alt="Gallery 6"/></td>
   </tr>
 </table>
 
