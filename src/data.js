@@ -98,8 +98,8 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
+import Proyek1 from "/assets/proyek/bukutahunansiswa.png";
+// import Proyek2 from "/assets/proyek/proyek2.webp";
 // import Proyek3 from "/assets/proyek/proyek3.webp";
 // import Proyek4 from "/assets/proyek/proyek4.webp";
 // import Proyek5 from "/assets/proyek/proyek5.webp";
@@ -109,17 +109,10 @@ export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    nama: "Buku Tahunan Siswa",
+    desk: "Buku Tahunan Siswa SMKN 1 LUMAJANG",
+    tools: ["HTML", "CSS", "Javascript", "PHP"],
     dad: "200",
-  },
-  {
-    id: 2,
-    gambar: Proyek2,
-    nama: "Company Profile",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
-    dad: "300",
+    url: "https://jurnalistik.smkn1lmj.sch.id/bts-smk/"
   },
 ];

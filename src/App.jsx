@@ -177,7 +177,95 @@ function App() {
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-semibold">JavaScript/TypeScript</span>
+                  <span className="font-semibold">HTML</span>
+                  <span className="text-violet-400">90%</span>
+                </div>
+                <div className="w-full bg-zinc-700 rounded-full h-2">
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "90%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">CSS</span>
+                  <span className="text-violet-400">85%</span>
+                </div>
+                <div className="w-full bg-zinc-700 rounded-full h-2">
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "85%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">JAVASCRIPT</span>
+                  <span className="text-violet-400">80%</span>
+                </div>
+                <div className="w-full bg-zinc-700 rounded-full h-2">
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "80%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">
+                    DATABASE
+                  </span>
+                  <span className="text-violet-400">75%</span>
+                </div>
+                <div className="w-full bg-zinc-700 rounded-full h-2">
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">BOOTSTRAP / TAILWINDS</span>
+                  <span className="text-violet-400">70%</span>
+                </div>
+                <div className="w-full bg-zinc-700 rounded-full h-2">
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "70%" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+                    {/* Technical Skills */}
+          <div className="p-6 bg-zinc-800 rounded-lg">
+            <h2 className="text-2xl font-bold mb-6 text-violet-400">
+              Technical Skills
+            </h2>
+            <div className="space-y-4">
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">PHP</span>
+                  <span className="text-violet-400">70%</span>
+                </div>
+                <div className="w-full bg-zinc-700 rounded-full h-2">
+                  <div
+                    className="bg-violet-500 h-2 rounded-full"
+                    style={{ width: "70%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">LARAVEL</span>
                   <span className="text-violet-400">90%</span>
                 </div>
                 <div className="w-full bg-zinc-700 rounded-full h-2">
@@ -217,7 +305,7 @@ function App() {
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">
-                    Database (MySQL/MongoDB)
+                    GIT & GITHUB
                   </span>
                   <span className="text-violet-400">75%</span>
                 </div>
@@ -229,51 +317,7 @@ function App() {
                 </div>
               </div>
 
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold">UI/UX Design</span>
-                  <span className="text-violet-400">70%</span>
-                </div>
-                <div className="w-full bg-zinc-700 rounded-full h-2">
-                  <div
-                    className="bg-violet-500 h-2 rounded-full"
-                    style={{ width: "70%" }}
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Soft Skills */}
-          <div className="p-6 bg-zinc-800 rounded-lg">
-            <h2 className="text-2xl font-bold mb-6 text-violet-400">
-              Soft Skills
-            </h2>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
-                <i className="ri-team-line ri-2x text-violet-400 mb-3 block"></i>
-                <h3 className="font-semibold">Team Work</h3>
-              </div>
-              <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
-                <i className="ri-lightbulb-line ri-2x text-violet-400 mb-3 block"></i>
-                <h3 className="font-semibold">Problem Solving</h3>
-              </div>
-              <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
-                <i className="ri-time-line ri-2x text-violet-400 mb-3 block"></i>
-                <h3 className="font-semibold">Time Management</h3>
-              </div>
-              <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
-                <i className="ri-communicate-line ri-2x text-violet-400 mb-3 block"></i>
-                <h3 className="font-semibold">Communication</h3>
-              </div>
-              <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
-                <i className="ri-focus-2-line ri-2x text-violet-400 mb-3 block"></i>
-                <h3 className="font-semibold">Detail Oriented</h3>
-              </div>
-              <div className="p-4 bg-zinc-700 rounded-lg text-center hover:bg-zinc-600 transition-colors">
-                <i className="ri-rocket-line ri-2x text-violet-400 mb-3 block"></i>
-                <h3 className="font-semibold">Fast Learning</h3>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -309,7 +353,7 @@ function App() {
                 </div>
                 <div className="mt-8 text-center ">
                   <a
-                    href=""
+                    href={proyek.url}
                     className="bg-violet-700 p-4 rounded-lg block border border-zinc-600 hover:bg-violet-600 transition-colors"
                   >
                     Lihat website
