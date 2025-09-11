@@ -35,10 +35,10 @@ function App() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
             <a
-              href=""
+              href="#kontak"
               className="w-full sm:w-auto bg-blue-600 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-blue-500 transition-colors duration-300 font-semibold text-center"
             >
-              Download CV <i className="ri-download-line ri-lg ml-2"></i>
+              Contact Me <i className="ri-message-line ri-lg ml-2"></i>
             </a>
             <a
               href="#proyek"
@@ -48,28 +48,36 @@ function App() {
             </a>
           </div>
 
-          {/* Quick Stats */}
+          {/* Social Media Links */}
           <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
-            <div className="text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-blue-400">
-                2+
-              </h3>
-              <p className="text-xs lg:text-sm opacity-75">Projects</p>
-            </div>
-            <div className="w-px h-12 bg-slate-600"></div>
-            <div className="text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-blue-400">
-                1+
-              </h3>
-              <p className="text-xs lg:text-sm opacity-75">Years Exp</p>
-            </div>
-            <div className="w-px h-12 bg-slate-600"></div>
-            <div className="text-center">
-              <h3 className="text-2xl lg:text-3xl font-bold text-blue-400">
-                100%
-              </h3>
-              <p className="text-xs lg:text-sm opacity-75">Satisfied</p>
-            </div>
+            <a
+              href="#"
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              aria-label="GitHub"
+            >
+              <i className="ri-github-line ri-2x"></i>
+            </a>
+            <a
+              href="#"
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              aria-label="LinkedIn"
+            >
+              <i className="ri-linkedin-line ri-2x"></i>
+            </a>
+            <a
+              href="#"
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              aria-label="Twitter"
+            >
+              <i className="ri-twitter-line ri-2x"></i>
+            </a>
+            <a
+              href="#"
+              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+              aria-label="Instagram"
+            >
+              <i className="ri-instagram-line ri-2x"></i>
+            </a>
           </div>
         </div>
 
@@ -97,20 +105,7 @@ function App() {
             className="w-12 rounded-md mb-10 sm:hidden"
           />
           <p className="text-base/loose mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum
-            dolorem inventore amet neque, sed nisi nemo, quaerat esse accusamus
-            laboriosam aliquid possimus provident? Accusantium sunt
-            necessitatibus possimus eligendi voluptates id hic excepturi
-            voluptas corporis, neque mollitia quis reprehenderit enim doloremque
-            velit illum illo eaque ea. Quidem in laudantium officia sit labore
-            fuga error beatae, tempora suscipit quae quasi magni eius alias
-            blanditiis mollitia magnam praesentium, ex culpa voluptate adipisci
-            earum laboriosam facilis! Deserunt, culpa eum? Numquam sed laborum
-            quaerat cupiditate ipsam hic fuga facilis saepe natus illum dicta
-            accusamus reprehenderit, vitae reiciendis minima similique pariatur
-            expedita? Aspernatur nam quam, voluptas quaerat placeat tenetur
-            sapiente consectetur. Ut voluptates sunt ratione quibusdam dicta in
-            cumque saepe. Laudantium natus suscipit aut eum, alias optio illum.
+            Saya seorang Pelajar Di SMKN 1 LUMAJANG. Saya Berusia 16 Tahun dan Saya Memilih Jurusan Rekayasa Perangkat Lunak, Karena Jurusan RPL Sesuai dengan minat saya Untuk Menjadi Seorang Programmer
           </p>
           <div className="flex items-center justify-between">
             <img
@@ -243,7 +238,7 @@ function App() {
               </div>
             </div>
           </div>
-                    {/* Technical Skills */}
+          {/* Technical Skills */}
           <div className="p-6 bg-slate-800 rounded-lg">
             <h2 className="text-2xl font-bold mb-6 text-blue-400">
               Technical Skills
@@ -297,7 +292,7 @@ function App() {
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                  style={{ width: "80%" }}
+                    style={{ width: "80%" }}
                   ></div>
                 </div>
               </div>
@@ -317,7 +312,7 @@ function App() {
                 </div>
               </div>
 
-              
+
             </div>
           </div>
         </div>
