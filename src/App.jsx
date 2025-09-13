@@ -173,47 +173,6 @@ function App() {
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">HTML</span>
-                  <span className="text-cyan-400">90%</span>
-                </div>
-                <div className="w-full bg-slate-700 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "90%" }}
-                  ></div>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold">CSS</span>
-                  <span className="text-cyan-400">85%</span>
-                </div>
-                <div className="w-full bg-slate-700 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "85%" }}
-                  ></div>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold">JAVASCRIPT</span>
-                  <span className="text-cyan-400">80%</span>
-                </div>
-                <div className="w-full bg-slate-700 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "80%" }}
-                  ></div>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold">
-                    DATABASE
-                  </span>
                   <span className="text-cyan-400">75%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
@@ -226,13 +185,54 @@ function App() {
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-semibold">BOOTSTRAP / TAILWINDS</span>
-                  <span className="text-cyan-400">70%</span>
+                  <span className="font-semibold">CSS</span>
+                  <span className="text-cyan-400">65%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "70%" }}
+                    style={{ width: "65%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">JAVASCRIPT</span>
+                  <span className="text-cyan-400">30%</span>
+                </div>
+                <div className="w-full bg-slate-700 rounded-full h-2">
+                  <div
+                    className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
+                    style={{ width: "30%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">
+                    DATABASE
+                  </span>
+                  <span className="text-cyan-400">55%</span>
+                </div>
+                <div className="w-full bg-slate-700 rounded-full h-2">
+                  <div
+                    className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
+                    style={{ width: "55%" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-semibold">BOOTSTRAP / TAILWINDS</span>
+                  <span className="text-cyan-400">50%</span>
+                </div>
+                <div className="w-full bg-slate-700 rounded-full h-2">
+                  <div
+                    className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
+                    style={{ width: "50%" }}
                   ></div>
                 </div>
               </div>
@@ -248,12 +248,12 @@ function App() {
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">PHP</span>
-                  <span className="text-cyan-400">70%</span>
+                  <span className="text-cyan-400">60%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "70%" }}
+                    style={{ width: "60%" }}
                   ></div>
                 </div>
               </div>
@@ -261,12 +261,12 @@ function App() {
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">LARAVEL</span>
-                  <span className="text-cyan-400">90%</span>
+                  <span className="text-cyan-400">40%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "90%" }}
+                    style={{ width: "40%" }}
                   ></div>
                 </div>
               </div>
@@ -274,25 +274,25 @@ function App() {
               <div>
                 <div className="flex justify-between mb-2">
                   <span className="font-semibold">React/Next.js</span>
-                  <span className="text-cyan-400">85%</span>
+                  <span className="text-cyan-400">45%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "85%" }}
+                    style={{ width: "45%" }}
                   ></div>
                 </div>
               </div>
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-semibold">Node.js/Express</span>
-                  <span className="text-cyan-400">80%</span>
+                  <span className="font-semibold">Flutter</span>
+                  <span className="text-cyan-400">20%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "80%" }}
+                    style={{ width: "20%" }}
                   ></div>
                 </div>
               </div>
@@ -302,12 +302,12 @@ function App() {
                   <span className="font-semibold">
                     GIT & GITHUB
                   </span>
-                  <span className="text-cyan-400">75%</span>
+                  <span className="text-cyan-400">80%</span>
                 </div>
                 <div className="w-full bg-slate-700 rounded-full h-2">
                   <div
                     className="bg-gradient-to-r from-blue-500 to-cyan-400 h-2 rounded-full"
-                    style={{ width: "75%" }}
+                    style={{ width: "80%" }}
                   ></div>
                 </div>
               </div>
