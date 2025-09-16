@@ -51,32 +51,32 @@ function App() {
           {/* Social Media Links */}
           <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
             <a
-              href="#"
+              href="https://github.com/Vendettaa666/Vendettaa666"
               className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
               aria-label="GitHub"
             >
               <i className="ri-github-line ri-2x"></i>
             </a>
             <a
-              href="#"
+              href="https://instagram.com/leoosatriaa"
               className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
               aria-label="LinkedIn"
             >
-              <i className="ri-linkedin-line ri-2x"></i>
+              <i className="ri-instagram-line ri-2x"></i>
             </a>
             <a
-              href="#"
+              href="https://discord.com/users/770242596945395712"
               className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
               aria-label="Twitter"
             >
-              <i className="ri-twitter-line ri-2x"></i>
+              <i className="ri-discord-line ri-2x"></i>
             </a>
             <a
-              href="#"
+              href="https://tiktok.com/@vendettaa.666"
               className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
               aria-label="Instagram"
             >
-              <i className="ri-instagram-line ri-2x"></i>
+              <i className="ri-tiktok-line ri-2x"></i>
             </a>
           </div>
         </div>
@@ -407,28 +407,28 @@ function App() {
                 <h3 className="font-semibold mb-4">Follow Me</h3>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://github.com/Vendettaa666/Vendettaa666"
                     className="p-3 bg-slate-700 rounded-lg hover:bg-blue-600 transition-colors"
                   >
                     <i className="ri-github-line ri-xl"></i>
                   </a>
                   <a
-                    href="#"
-                    className="p-3 bg-slate-700 rounded-lg hover:bg-blue-600 transition-colors"
-                  >
-                    <i className="ri-linkedin-line ri-xl"></i>
-                  </a>
-                  <a
-                    href="#"
+                    href="https://instagram.com/leoosatriaa"
                     className="p-3 bg-slate-700 rounded-lg hover:bg-blue-600 transition-colors"
                   >
                     <i className="ri-instagram-line ri-xl"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://discord.com/users/770242596945395712"
                     className="p-3 bg-slate-700 rounded-lg hover:bg-blue-600 transition-colors"
                   >
-                    <i className="ri-twitter-line ri-xl"></i>
+                    <i className="ri-discord-line ri-xl"></i>
+                  </a>
+                  <a
+                    href="https://tiktok.com/@vendettaa.666"
+                    className="p-3 bg-slate-700 rounded-lg hover:bg-blue-600 transition-colors"
+                  >
+                    <i className="ri-tiktok-line ri-xl"></i>
                   </a>
                 </div>
               </div>
