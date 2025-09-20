@@ -29,9 +29,9 @@ function App() {
 
           <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
             🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech.
-🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
-☕ I thrive on iced coffee and loud riffs while coding.
-🤝 Always open to collaboration, learning, and tackling new challenges!
+            🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
+            ☕ I thrive on iced coffee and loud riffs while coding.
+            🤝 Always open to collaboration, learning, and tackling new challenges!
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
