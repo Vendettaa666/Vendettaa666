@@ -106,7 +106,7 @@ function App() {
             className="w-12 rounded-md mb-10 sm:hidden"
           />
           <p className="text-base/loose mb-10">
-            Saya seorang Pelajar Di SMKN 1 LUMAJANG. Saya Berusia 16 Tahun dan Saya Memilih Jurusan Rekayasa Perangkat Lunak, Karena Jurusan RPL Sesuai dengan minat saya Untuk Menjadi Seorang Programmer
+            Saya seorang Pelajar Di SMKN 1 LUMAJANG. Saya Berusia 18 Tahun dan Saya Memilih Jurusan Rekayasa Perangkat Lunak, Karena Jurusan RPL Sesuai dengan minat saya Untuk Menjadi Seorang Programmer
           </p>
           <div className="flex items-center justify-between">
             <img
@@ -437,7 +437,7 @@ function App() {
           </div>
 
           {/* Contact Form */}
-          <div className="p-6 bg-slate-800 rounded-lg">
+          {/* <div className="p-6 bg-slate-800 rounded-lg">
             <h2 className="text-2xl font-bold mb-6 text-blue-400">
               Send Message
             </h2>
@@ -494,7 +494,7 @@ function App() {
                 Kirim Pesan <i className="ri-send-plane-line ri-lg ml-2"></i>
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer
