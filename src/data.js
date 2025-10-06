@@ -19,6 +19,9 @@ import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/mysql.png";
 import Tools13 from "/assets/tools/postgressql.png";
+import Tools14 from "/assets/tools/dart.png";
+import Tools15 from "/assets/tools/laravel.png";
+import Tools16 from "/assets/tools/flutter.png";
 
 export const listTools = [
   {
@@ -112,7 +115,30 @@ export const listTools = [
     ket: "Database",
     dad: "1300",
   },
+  {
+    id: 14,
+    gambar: Tools14,
+    nama: "Dart",
+    ket: "Language",
+    dad: "1400",
+  },
+  {
+    id: 15,
+    gambar: Tools15,
+    nama: "Laravel",
+    ket: "Framework",
+    dad: "1500",
+  },
+  {
+    id: 16,
+    gambar: Tools16,
+    nama: "Flutter",
+    ket: "Framework",
+    dad: "1600",
+  },
+
 ];
+
 
 import Proyek1 from "/assets/proyek/bukutahunansiswa.png";
 import Proyek2 from "/assets/proyek/simpadwebsite.png";
