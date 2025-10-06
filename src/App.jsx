@@ -323,7 +323,7 @@ function App() {
       <div id="proyek" className="proyek mt-32 py-10">
         <h1 className="text-center text-4xl font-bold mb-2 ">Proyek</h1>
         <p className="text-base/loose text-center opacity-50 ">
-          beberapa proyek yang saya kerjakan
+          Beberapa proyek Front end yang saya kerjakan 
         </p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
           {listProyek.map((proyek) => (

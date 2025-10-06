@@ -115,9 +115,9 @@ export const listTools = [
 ];
 
 import Proyek1 from "/assets/proyek/bukutahunansiswa.png";
-// import Proyek2 from "/assets/proyek/proyek2.webp";
-// import Proyek3 from "/assets/proyek/proyek3.webp";
-// import Proyek4 from "/assets/proyek/proyek4.webp";
+import Proyek2 from "/assets/proyek/simpadwebsite.png";
+import Proyek3 from "/assets/proyek/smestawebsite.png";
+import Proyek4 from "/assets/proyek/misiwebsite.png";
 // import Proyek5 from "/assets/proyek/proyek5.webp";
 // import Proyek6 from "/assets/proyek/proyek6.webp";
 
@@ -130,5 +130,32 @@ export const listProyek = [
     tools: ["HTML", "CSS", "Javascript", "PHP"],
     dad: "200",
     url: "https://jurnalistik.smkn1lmj.sch.id/bts-smk/"
+  },
+   {
+    id: 2,
+    gambar: Proyek2,
+    nama: "Website Simpad",
+    desk: "Website Pajak Daerah Kabupaten Kudus",
+    tools: ["Laravel", "Bootstrap", "Javascript", "PHP"],
+    dad: "300",
+    url: "https://staging-simpadkuduskab.nusantaratama.com/"
+  },
+   {
+    id: 3,
+    gambar: Proyek3,
+    nama: "Smesta Website",
+    desk: "E-Catalog UKM",
+    tools: ["Laravel", "Tailwind", "Javascript", "PHP"],
+    dad: "400",
+    url: "https://staging-smesta.nusantaratama.com/"
+  },
+   {
+    id: 4,
+    gambar: Proyek4,
+    nama: "Misi Website",
+    desk: "Aplikasi Manajemen Informasi Peserta Magang Tamara Management",
+    tools: ["Laravel", "Bootstrap", "Javascript", "PHP"],
+    dad: "500",
+    url: "https://dev-misi.nusantaratama.com/"
   },
 ];
