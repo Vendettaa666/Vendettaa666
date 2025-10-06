@@ -1,14 +1,26 @@
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // <-- CSS untuk animasi
 
 function App() {
+  useEffect(() => {
+      AOS.init({
+        duration: 800,        // durasi animasi (ms)
+        easing: 'ease-in-out', // gaya transisi
+        once: true,           // animasi hanya berjalan sekali
+        mirror: false         // jangan animasi ulang saat scroll ke atas
+      });
+    }, []);
+
   return (
     <>
       <div
         id="hero"
         className="hero grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center min-h-screen lg:min-h-0"
       >
-        <div className="order-2 lg:order-1 text-center lg:text-left">
+        <div className="order-2 lg:order-1 text-center lg:text-left" >
           <div className="display flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
             <img
               src={DataImage.HeroImage}
@@ -99,7 +111,7 @@ function App() {
 
       {/* About */}
       <div id="about" className="about mt-32 py-10">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-slate-800 rounded-lg ">
+        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-slate-800 rounded-lg " data-aos="fade-up">
           <img
             src={DataImage.HeroImage}
             alt="Hero Image"
@@ -132,14 +144,14 @@ function App() {
         </div>
 
         <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4 ">Tools Yang dipakai</h1>
-          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50 ">
+          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up">Tools Yang dipakai</h1>
+          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50 " data-aos="fade-up">
             Berikut tools tool yang dipakai dalam membuat website
           </p>
-          <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
+          <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 " >
             {listTools.map((tool) => (
               <div
-                className="flex items-center gap-3 p-3 border border-slate-600 rounded-md hover:bg-slate-800 group"
+                className="flex items-center gap-3 p-3 border border-slate-600 rounded-md hover:bg-slate-800 group" data-aos="fade-up"
                 key={tool.id}
               >
                 <img
@@ -159,15 +171,15 @@ function App() {
 
       {/* Skills */}
       <div id="skills" className="skills mt-32 py-10">
-        <h1 className="text-center text-4xl font-bold mb-4">Skills</h1>
-        <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto">
+        <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">Skills</h1>
+        <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto" data-aos="fade-up">
           Keahlian teknis dan non-teknis yang saya miliki dalam pengembangan web
         </p>
 
         <div className="skills-container mt-14 grid lg:grid-cols-2 grid-cols-1 gap-8">
           {/* Technical Skills */}
-          <div className="p-6 bg-slate-800 rounded-lg">
-            <h2 className="text-2xl font-bold mb-6 text-blue-400">
+          <div className="p-6 bg-slate-800 rounded-lg" data-aos="fade-up">
+            <h2 className="text-2xl font-bold mb-6 text-blue-400" > 
               Technical Skills
             </h2>
             <div className="space-y-4">
@@ -240,7 +252,7 @@ function App() {
             </div>
           </div>
           {/* Technical Skills */}
-          <div className="p-6 bg-slate-800 rounded-lg">
+          <div className="p-6 bg-slate-800 rounded-lg" data-aos="fade-up">
             <h2 className="text-2xl font-bold mb-6 text-blue-400">
               Technical Skills
             </h2>
@@ -321,13 +333,13 @@ function App() {
 
       {/* proyek */}
       <div id="proyek" className="proyek mt-32 py-10">
-        <h1 className="text-center text-4xl font-bold mb-2 ">Proyek</h1>
-        <p className="text-base/loose text-center opacity-50 ">
+        <h1 className="text-center text-4xl font-bold mb-2 " data-aos="fade-up">Proyek</h1>
+        <p className="text-base/loose text-center opacity-50 " data-aos="fade-up">
           Beberapa proyek Front end yang saya kerjakan 
         </p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-slate-800 rounded-lg">
+            <div key={proyek.id} className="p-4 bg-slate-800 rounded-lg" data-aos="fade-up">
               <img
                 src={proyek.gambar}
                 alt="proyek"
@@ -363,16 +375,16 @@ function App() {
 
       {/* Contact */}
       <div id="kontak" className="kontak mt-64 py-10">
-        <h1 className="text-center text-4xl font-bold mb-4">Contact</h1>
-        <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto mb-14">
+        <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">Contact</h1>
+        <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto mb-14" data-aos="fade-up">
           Mari berdiskusi tentang proyek Anda. Saya siap membantu mewujudkan ide
           digital Anda
         </p>
 
-        <div className="contact-container grid lg:grid-cols-2 grid-cols-1 gap-8">
+        <div className="contact-container flex justify-center items-center mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="p-6 bg-slate-800 rounded-lg">
+          <div className="space-y-6 w-full max-w-3xl">
+            <div className="p-6 bg-slate-800 rounded-lg" data-aos="fade-up">
               <h2 className="text-2xl font-bold mb-6 text-blue-400">
                 Get In Touch
               </h2>
