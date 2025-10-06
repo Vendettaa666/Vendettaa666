@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 @layer base{
@@ -126,4 +127,34 @@
   body {
     @apply bg-background text-foreground;
     }
+}
+
+/* Custom Scrollbar Berwarna - Tambahkan di akhir index.css */
+@layer utilities {
+  /* Scrollbar untuk seluruh aplikasi */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1e293b; /* slate-800 */
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #3b82f6, #06b6d4); /* gradient biru ke cyan */
+    border-radius: 8px;
+    border: 2px solid #0f172a; /* slate-900 border */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #2563eb, #0891b2); /* warna lebih gelap saat hover */
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #1e293b; /* thumb biru, track slate-800 */
+  }
 }
