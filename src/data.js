@@ -155,7 +155,8 @@ export const listProyek = [
     desk: "Buku Tahunan Siswa SMKN 1 LUMAJANG",
     tools: ["HTML", "CSS", "Javascript", "PHP"],
     dad: "200",
-    url: "https://jurnalistik.smkn1lmj.sch.id/bts-smk/"
+    url: "https://jurnalistik.smkn1lmj.sch.id/bts-smk/",
+    note: "Note: This project is a school assignment and is not a commercial project."
   },
    {
     id: 2,
@@ -164,7 +165,8 @@ export const listProyek = [
     desk: "Website Pajak Daerah Kabupaten Kudus",
     tools: ["Laravel", "Bootstrap", "Javascript", "PHP"],
     dad: "300",
-    url: "https://staging-simpadkuduskab.nusantaratama.com/"
+    url: "https://staging-simpadkuduskab.nusantaratama.com/",
+    note: "Note: Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
   },
    {
     id: 3,
@@ -173,7 +175,8 @@ export const listProyek = [
     desk: "E-Catalog UKM",
     tools: ["Laravel", "Tailwind", "Javascript", "PHP"],
     dad: "400",
-    url: "https://staging-smesta.nusantaratama.com/"
+    url: "https://staging-smesta.nusantaratama.com/",
+    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
   },
    {
     id: 4,
@@ -182,6 +185,7 @@ export const listProyek = [
     desk: "Aplikasi Manajemen Informasi Peserta Magang Tamara Management",
     tools: ["Laravel", "Bootstrap", "Javascript", "PHP"],
     dad: "500",
-    url: "https://dev-misi.nusantaratama.com/"
+    url: "https://dev-misi.nusantaratama.com/",
+    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
   },
 ];

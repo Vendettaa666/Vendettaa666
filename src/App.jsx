@@ -118,8 +118,8 @@ function App() {
             className="w-12 rounded-md mb-10 sm:hidden"
           />
           <p className="text-base/loose mb-10">
-            Saya seorang Pelajar Di SMKN 1 LUMAJANG. Saya Berusia 18 Tahun dan Saya Memilih Jurusan Rekayasa Perangkat Lunak, Karena Jurusan RPL Sesuai dengan minat saya Untuk Menjadi Seorang Programmer
-          </p>
+            I am a student at SMKN 1 Lumajang. I am 18 years old and chose to major in Software Engineering because the RPL major aligns with my interests in becoming a full-stack programmer. I am currently interning at <a href="https://nusantaratama.com/" className="text-cyan-300">NUSANTARATAMA.COM</a>
+            </p>
           <div className="flex items-center justify-between">
             <img
               src={DataImage.HeroImage}
@@ -129,13 +129,13 @@ function App() {
             <div className="flex items-center gap-6 ">
               <div>
                 <h1 className="text-4xl mb-1 ">
-                  45<span className="text-blue-500"></span>
+                  4<span className="text-blue-500"></span>
                 </h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1 ">
-                  4 <span className="text-blue-500">+</span>
+                  1 <span className="text-blue-500">+</span>
                 </h1>
                 <p>Tahun Pengalaman</p>
               </div>
@@ -337,40 +337,47 @@ function App() {
         <p className="text-base/loose text-center opacity-50 " data-aos="fade-up">
           Beberapa proyek Front end yang saya kerjakan 
         </p>
-        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
-          {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-slate-800 rounded-lg" data-aos="fade-up">
-              <img
-                src={proyek.gambar}
-                alt="proyek"
-                loading="lazy"
-                className="rounded-lg"
-              />
-              <div>
-                <h1 className="text-2xl font-bold my-4 ">{proyek.nama}</h1>
-                <p className="text-base/loose mb-4">{proyek.desk}</p>
-                <div className="flex flex-wrap gap-2 ">
-                  {proyek.tools.map((tool, index) => (
-                    <p
-                      className="py-1 px-3 border border-slate-500 bg-slate-600 rounded-md font-semibold"
-                      key={index}
-                    >
-                      {tool}
-                    </p>
-                  ))}
-                </div>
-                <div className="mt-8 text-center ">
-                  <a
-                    href={proyek.url}
-                    className="bg-blue-600 p-4 rounded-lg block border border-slate-600 hover:bg-blue-500 transition-colors"
-                  >
-                    Lihat website
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+  {listProyek.map((proyek) => (
+    <div
+      key={proyek.id}
+      className="p-4 bg-slate-800 rounded-lg flex flex-col"
+      data-aos="fade-up"
+    >
+      <img
+        src={proyek.gambar}
+        alt="proyek"
+        loading="lazy"
+        className="rounded-lg w-full"
+      />
+      <div className="flex flex-col flex-grow justify-between mt-4">
+        <div>
+          <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
+          <p className="text-base/loose mb-4">{proyek.desk}</p>
+          <div className="flex flex-wrap gap-2 mb-2">
+            {proyek.tools.map((tool, index) => (
+              <p
+                className="py-1 px-3 border border-slate-500 bg-slate-600 rounded-md font-semibold"
+                key={index}
+              >
+                {tool}
+              </p>
+            ))}
+          </div>
+          <p className="text-xs/loose mb-4">{proyek.note}</p>
         </div>
+        <div className="mt-2 text-center">
+          <a
+            href={proyek.url}
+            className="bg-blue-600 p-4 rounded-lg block border border-slate-600 hover:bg-blue-500 transition-colors"
+          >
+            Lihat website
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
       </div>
 
       {/* Contact */}
