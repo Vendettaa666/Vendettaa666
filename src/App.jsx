@@ -6,13 +6,13 @@ import 'aos/dist/aos.css'; // <-- CSS untuk animasi
 
 function App() {
   useEffect(() => {
-      AOS.init({
-        duration: 800,        // durasi animasi (ms)
-        easing: 'ease-in-out', // gaya transisi
-        once: true,           // animasi hanya berjalan sekali
-        mirror: false         // jangan animasi ulang saat scroll ke atas
-      });
-    }, []);
+    AOS.init({
+      duration: 800,        // durasi animasi (ms)
+      easing: 'ease-in-out', // gaya transisi
+      once: true,           // animasi hanya berjalan sekali
+      mirror: false         // jangan animasi ulang saat scroll ke atas
+    });
+  }, []);
 
   return (
     <>
@@ -20,8 +20,8 @@ function App() {
         id="hero"
         className="hero grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center min-h-screen lg:min-h-0"
       >
-        <div className="order-2 lg:order-1 text-center lg:text-left" >
-          <div className="display flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
+        <div className="order-2 lg:order-1 text-center lg:text-left " >
+          <div className="hidden md:flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
             <img
               src={DataImage.HeroImage}
               alt="hero image"
@@ -119,7 +119,7 @@ function App() {
           />
           <p className="text-base/loose mb-10">
             I am a student at SMKN 1 Lumajang. I am 18 years old and chose to major in Software Engineering because the RPL major aligns with my interests in becoming a full-stack programmer. I am currently interning at <a href="https://nusantaratama.com/" className="text-cyan-300">NUSANTARATAMA.COM</a>
-            </p>
+          </p>
           <div className="flex items-center justify-between">
             <img
               src={DataImage.HeroImage}
@@ -179,7 +179,7 @@ function App() {
         <div className="skills-container mt-14 grid lg:grid-cols-2 grid-cols-1 gap-8">
           {/* Technical Skills */}
           <div className="p-6 bg-slate-800 rounded-lg" data-aos="fade-up">
-            <h2 className="text-2xl font-bold mb-6 text-blue-400" > 
+            <h2 className="text-2xl font-bold mb-6 text-blue-400" >
               Technical Skills
             </h2>
             <div className="space-y-4">
@@ -335,49 +335,49 @@ function App() {
       <div id="proyek" className="proyek mt-32 py-10">
         <h1 className="text-center text-4xl font-bold mb-2 " data-aos="fade-up">Proyek</h1>
         <p className="text-base/loose text-center opacity-50 " data-aos="fade-up">
-          Beberapa proyek Front end yang saya kerjakan 
+          Beberapa proyek Front end yang saya kerjakan
         </p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-  {listProyek.map((proyek) => (
-    <div
-      key={proyek.id}
-      className="p-4 bg-slate-800 rounded-lg flex flex-col"
-      data-aos="fade-up"
-    >
-      <img
-        src={proyek.gambar}
-        alt="proyek"
-        loading="lazy"
-        className="rounded-lg w-full"
-      />
-      <div className="flex flex-col flex-grow justify-between mt-4">
-        <div>
-          <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
-          <p className="text-base/loose mb-4">{proyek.desk}</p>
-          <div className="flex flex-wrap gap-2 mb-2">
-            {proyek.tools.map((tool, index) => (
-              <p
-                className="py-1 px-3 border border-slate-500 bg-slate-600 rounded-md font-semibold"
-                key={index}
-              >
-                {tool}
-              </p>
-            ))}
-          </div>
-          <p className="text-xs/loose mb-4">{proyek.note}</p>
+          {listProyek.map((proyek) => (
+            <div
+              key={proyek.id}
+              className="p-4 bg-slate-800 rounded-lg flex flex-col"
+              data-aos="fade-up"
+            >
+              <img
+                src={proyek.gambar}
+                alt="proyek"
+                loading="lazy"
+                className="rounded-lg w-full"
+              />
+              <div className="flex flex-col flex-grow justify-between mt-4">
+                <div>
+                  <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
+                  <p className="text-base/loose mb-4">{proyek.desk}</p>
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {proyek.tools.map((tool, index) => (
+                      <p
+                        className="py-1 px-3 border border-slate-500 bg-slate-600 rounded-md font-semibold"
+                        key={index}
+                      >
+                        {tool}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="text-xs/loose mb-4">{proyek.note}</p>
+                </div>
+                <div className="mt-2 text-center">
+                  <a
+                    href={proyek.url}
+                    className="bg-blue-600 p-4 rounded-lg block border border-slate-600 hover:bg-blue-500 transition-colors"
+                  >
+                    Lihat website
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="mt-2 text-center">
-          <a
-            href={proyek.url}
-            className="bg-blue-600 p-4 rounded-lg block border border-slate-600 hover:bg-blue-500 transition-colors"
-          >
-            Lihat website
-          </a>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
       </div>
 
       {/* Contact */}
