@@ -1,6 +1,7 @@
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
 import { useState, useEffect } from "react";
+import Hyperspeed from "./components/Hyperspeed";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // <-- CSS untuk animasi
 
@@ -18,93 +19,139 @@ function App() {
     <>
       <div
         id="hero"
-        className="hero grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center min-h-screen lg:min-h-0"
+        className="hero relative w-screen left-[50%] right-[50%] -ml-[50vw] overflow-hidden"
       >
-        <div className="order-2 lg:order-1 text-center lg:text-left " >
-          <div className="hidden md:flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
-            <img
-              src={DataImage.HeroImage}
-              alt="hero image"
-              className="w-8 sm:w-10 rounded-md"
-              loading="lazy"
-            />
-            <q className="text-xs sm:text-sm">Front end Developer</q>
-          </div>
-
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
-            Hi, Saya <span className="text-blue-400">Leo Satria</span>
-          </h1>
-
-          <h2 className="text-lg sm:text-xl lg:text-2xl text-cyan-300 font-semibold mb-4 lg:mb-6">
-            Front end Developer
-          </h2>
-
-          <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
-            🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech.
-            🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
-            ☕ I thrive on iced coffee and loud riffs while coding.
-            🤝 Always open to collaboration, learning, and tackling new challenges!
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-            <a
-              href="#kontak"
-              className="w-full sm:w-auto bg-blue-600 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-blue-500 transition-colors duration-300 font-semibold text-center"
-            >
-              Contact Me <i className="ri-message-line ri-lg ml-2"></i>
-            </a>
-            <a
-              href="#proyek"
-              className="w-full sm:w-auto bg-slate-700 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-slate-600 transition-colors duration-300 font-semibold text-center"
-            >
-              Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-2"></i>
-            </a>
-          </div>
-
-          {/* Social Media Links */}
-          <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
-            <a
-              href="https://github.com/Vendettaa666/Vendettaa666"
-              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-              aria-label="GitHub"
-            >
-              <i className="ri-github-line ri-2x"></i>
-            </a>
-            <a
-              href="https://instagram.com/leoosatriaa"
-              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-              aria-label="LinkedIn"
-            >
-              <i className="ri-instagram-line ri-2x"></i>
-            </a>
-            <a
-              href="https://discord.com/users/770242596945395712"
-              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-              aria-label="Twitter"
-            >
-              <i className="ri-discord-line ri-2x"></i>
-            </a>
-            <a
-              href="https://tiktok.com/@vendettaa.666"
-              className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-              aria-label="Instagram"
-            >
-              <i className="ri-tiktok-line ri-2x"></i>
-            </a>
-          </div>
+        {/* 1. Layer Background Hyperspeed */}
+        <div className="absolute inset-0 z-0">
+          <Hyperspeed
+            effectOptions={{
+              onSpeedUp: () => { },
+              onSlowDown: () => { },
+              distortion: 'LongRaceDistortion',
+              length: 400,
+              roadWidth: 10,
+              islandWidth: 5,
+              lanesPerRoad: 2,
+              fov: 90,
+              fovSpeedUp: 150,
+              speedUp: 2,
+              carLightsFade: 0.4,
+              totalSideLightSticks: 50,
+              lightPairsPerRoadWay: 70,
+              shoulderLinesWidthPercentage: 0.05,
+              brokenLinesWidthPercentage: 0.1,
+              brokenLinesLengthPercentage: 0.5,
+              lightStickWidth: [0.12, 0.5],
+              lightStickHeight: [1.3, 1.7],
+              movingAwaySpeed: [60, 80],
+              movingCloserSpeed: [-120, -160],
+              carLightsLength: [400 * 0.05, 400 * 0.15],
+              carLightsRadius: [0.05, 0.14],
+              carWidthPercentage: [0.3, 0.5],
+              carShiftX: [-0.2, 0.2],
+              carFloorSeparation: [0.05, 1],
+              colors: {
+                roadColor: 0x080808,
+                islandColor: 0x0a0a0a,
+                background: 0x000000,
+                shoulderLines: 0x131318,
+                brokenLines: 0x131318,
+                leftCars: [0xff5f73, 0xe74d60, 0xff102a],
+                rightCars: [0xa4e3e6, 0x80d1d4, 0x53c2c6],
+                sticks: 0xa4e3e6
+              }
+            }}
+          />
         </div>
 
-        <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-          <div className="relative">
-            <img
-              src={DataImage.HeroImage}
-              alt="Leo Satria - Full Stack Developer"
-              className="w-64 sm:w-80 lg:w-96 xl:w-[400px] rounded-2xl shadow-2xl"
-              loading="lazy"
-            />
-            {/* Decorative elements */}
-            <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>
-            <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div>
+        {/* Content Container */}
+        <div className="container mx-auto relative z-10 grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center min-h-screen lg:min-h-0">
+          <div className="order-2 lg:order-1 text-center lg:text-left " >
+            <div className="hidden md:flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
+              <img
+                src={DataImage.HeroImage}
+                alt="hero image"
+                className="w-8 sm:w-10 rounded-md"
+                loading="lazy"
+              />
+              <q className="text-xs sm:text-sm">Front end Developer</q>
+            </div>
+
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
+              Hi, Saya <span className="text-blue-400">Leo Satria</span>
+            </h1>
+
+            <h2 className="text-lg sm:text-xl lg:text-2xl text-cyan-300 font-semibold mb-4 lg:mb-6">
+              Front end Developer
+            </h2>
+
+            <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
+              🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech.
+              🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
+              ☕ I thrive on iced coffee and loud riffs while coding.
+              🤝 Always open to collaboration, learning, and tackling new challenges!
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+              <a
+                href="#kontak"
+                className="w-full sm:w-auto bg-blue-600 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-blue-500 transition-colors duration-300 font-semibold text-center"
+              >
+                Contact Me <i className="ri-message-line ri-lg ml-2"></i>
+              </a>
+              <a
+                href="#proyek"
+                className="w-full sm:w-auto bg-slate-700 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-slate-600 transition-colors duration-300 font-semibold text-center"
+              >
+                Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-2"></i>
+              </a>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
+              <a
+                href="https://github.com/Vendettaa666/Vendettaa666"
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                aria-label="GitHub"
+              >
+                <i className="ri-github-line ri-2x"></i>
+              </a>
+              <a
+                href="https://instagram.com/leoosatriaa"
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <i className="ri-instagram-line ri-2x"></i>
+              </a>
+              <a
+                href="https://discord.com/users/770242596945395712"
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                aria-label="Twitter"
+              >
+                <i className="ri-discord-line ri-2x"></i>
+              </a>
+              <a
+                href="https://tiktok.com/@vendettaa.666"
+                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <i className="ri-tiktok-line ri-2x"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="relative">
+              <img
+                src={DataImage.HeroImage}
+                alt="Leo Satria - Full Stack Developer"
+                className="w-64 sm:w-80 lg:w-96 xl:w-[400px] rounded-2xl shadow-2xl"
+                loading="lazy"
+              />
+              {/* Decorative elements */}
+              <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>
+              <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div>
+            </div>
           </div>
         </div>
       </div>
