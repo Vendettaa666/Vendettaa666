@@ -3,7 +3,7 @@ import { listTools, listProyek } from "./data";
 import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // <-- CSS untuk animasi
-import Hyperspeed from "./components/Hyperspeed";
+import FloatingLines from "./components/FloatingLine";
 
 function App() {
   useEffect(() => {
@@ -21,51 +21,25 @@ function App() {
         id="hero"
         className="hero relative min-h-screen flex items-center"
       >
-        {/* Background Hyperspeed Effect */}
+        {/* Background FloatingLines Effect */}
         <div className="absolute inset-0 z-0">
-          <Hyperspeed
-            effectOptions={{
-              onSpeedUp: () => { },
-              onSlowDown: () => { },
-              distortion: 'turbulentDistortion',
-              length: 400,
-              roadWidth: 10,
-              islandWidth: 2,
-              lanesPerRoad: 4,
-              fov: 90,
-              fovSpeedUp: 150,
-              speedUp: 2,
-              carLightsFade: 0.4,
-              totalSideLightSticks: 20,
-              lightPairsPerRoadWay: 40,
-              shoulderLinesWidthPercentage: 0.05,
-              brokenLinesWidthPercentage: 0.1,
-              brokenLinesLengthPercentage: 0.5,
-              lightStickWidth: [0.12, 0.5],
-              lightStickHeight: [1.3, 1.7],
-              movingAwaySpeed: [60, 80],
-              movingCloserSpeed: [-120, -160],
-              carLightsLength: [400 * 0.03, 400 * 0.2],
-              carLightsRadius: [0.05, 0.14],
-              carWidthPercentage: [0.3, 0.5],
-              carShiftX: [-0.8, 0.8],
-              carFloorSeparation: [0, 5],
-              colors: {
-                roadColor: 0x080808,
-                islandColor: 0x0a0a0a,
-                background: 0x000000,
-                shoulderLines: 0xFFFFFF,
-                brokenLines: 0xFFFFFF,
-                leftCars: [0xD856BF, 0x6750A2, 0xC247AC],
-                rightCars: [0x03B3C3, 0x0E5EA5, 0x324555],
-                sticks: 0x03B3C3,
-              }
-            }}
+          <FloatingLines 
+            enabledWaves={['top', 'middle', 'bottom']}
+            lineCount={[12, 18, 24]}
+            lineDistance={[8, 6, 4]}
+            bendRadius={6.0}
+            bendStrength={-0.4}
+            interactive={true}
+            parallax={true}
           />
+          
+          {/* Gradient Overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/40"></div>
         </div>
 
-        {/* Content Overlay */}
-        <div className="relative z-10 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-12 gap-8 pt-6 lg:pt-10 items-center">
+        {/* Content Container */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-12 items-center min-h-screen py-20">
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <div className="hidden md:flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
               <img
@@ -152,6 +126,7 @@ function App() {
               <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>
               <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div>
             </div>
+          </div>
           </div>
         </div>
       </div>
