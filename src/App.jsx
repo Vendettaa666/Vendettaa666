@@ -17,13 +17,13 @@ function App() {
 
   return (
     <>
-<div
+      <div
         id="hero"
-        className="hero relative min-h-screen flex items-center"
+        className="hero relative min-h-screen flex items-center px-10"
       >
         {/* Background FloatingLines Effect */}
         <div className="absolute inset-0 z-0">
-          <FloatingLines 
+          <FloatingLines
             enabledWaves={['top', 'middle', 'bottom']}
             lineCount={[12, 18, 24]}
             lineDistance={[8, 6, 4]}
@@ -32,7 +32,7 @@ function App() {
             interactive={true}
             parallax={true}
           />
-          
+
           {/* Gradient Overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/40"></div>
         </div>
@@ -40,98 +40,98 @@ function App() {
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-12 items-center min-h-screen py-20">
-          <div className="order-2 lg:order-1 text-center lg:text-left">
-            <div className="hidden md:flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
-              <img
-                src={DataImage.HeroImage}
-                alt="hero image"
-                className="w-8 sm:w-10 rounded-md"
-                loading="lazy"
-              />
-              <q className="text-xs sm:text-sm">Front end Developer</q>
+            <div className="order-2 lg:order-1 text-center lg:text-left">
+              <div className="hidden md:flex items-center justify-center lg:justify-start gap-3 mb-6 bg-slate-800 w-fit mx-auto lg:mx-0 px-4 py-3 rounded-2xl">
+                <img
+                  src={DataImage.HeroImage}
+                  alt="hero image"
+                  className="w-8 sm:w-10 rounded-md"
+                  loading="lazy"
+                />
+                <q className="text-xs sm:text-sm">Front end Developer</q>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
+                Hi, Saya <span className="text-blue-400">Leo Satria</span>
+              </h1>
+
+              <h2 className="text-lg sm:text-xl lg:text-2xl text-cyan-300 font-semibold mb-4 lg:mb-6">
+                Front end Developer
+              </h2>
+
+              <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
+                🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech.
+                🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
+                ☕ I thrive on iced coffee and loud riffs while coding.
+                🤝 Always open to collaboration, learning, and tackling new challenges!
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+                <a
+                  href="#kontak"
+                  className="w-full sm:w-auto bg-blue-600 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-blue-500 transition-colors duration-300 font-semibold text-center"
+                >
+                  Contact Me <i className="ri-message-line ri-lg ml-2"></i>
+                </a>
+                <a
+                  href="#proyek"
+                  className="w-full sm:w-auto bg-slate-700 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-slate-600 transition-colors duration-300 font-semibold text-center"
+                >
+                  Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-2"></i>
+                </a>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
+                <a
+                  href="https://github.com/Vendettaa666/Vendettaa666"
+                  className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                  aria-label="GitHub"
+                >
+                  <i className="ri-github-line ri-2x"></i>
+                </a>
+                <a
+                  href="https://instagram.com/leoosatriaa"
+                  className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                  aria-label="LinkedIn"
+                >
+                  <i className="ri-instagram-line ri-2x"></i>
+                </a>
+                <a
+                  href="https://discord.com/users/770242596945395712"
+                  className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                  aria-label="Twitter"
+                >
+                  <i className="ri-discord-line ri-2x"></i>
+                </a>
+                <a
+                  href="https://tiktok.com/@vendettaa.666"
+                  className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
+                  aria-label="Instagram"
+                >
+                  <i className="ri-tiktok-line ri-2x"></i>
+                </a>
+              </div>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
-              Hi, Saya <span className="text-blue-400">Leo Satria</span>
-            </h1>
-
-            <h2 className="text-lg sm:text-xl lg:text-2xl text-cyan-300 font-semibold mb-4 lg:mb-6">
-              Front end Developer
-            </h2>
-
-            <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
-              🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech.
-              🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
-              ☕ I thrive on iced coffee and loud riffs while coding.
-              🤝 Always open to collaboration, learning, and tackling new challenges!
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-              <a
-                href="#kontak"
-                className="w-full sm:w-auto bg-blue-600 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-blue-500 transition-colors duration-300 font-semibold text-center"
-              >
-                Contact Me <i className="ri-message-line ri-lg ml-2"></i>
-              </a>
-              <a
-                href="#proyek"
-                className="w-full sm:w-auto bg-slate-700 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-slate-600 transition-colors duration-300 font-semibold text-center"
-              >
-                Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-2"></i>
-              </a>
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative">
+                <img
+                  src={DataImage.HeroImage}
+                  alt="Leo Satria - Full Stack Developer"
+                  className="w-64 sm:w-80 lg:w-96 xl:w-[400px] rounded-2xl shadow-2xl"
+                  loading="lazy"
+                />
+                {/* Decorative elements */}
+                <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>
+                <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div>
+              </div>
             </div>
-
-            {/* Social Media Links */}
-            <div className="flex items-center justify-center lg:justify-start gap-6 lg:gap-8 mt-8 lg:mt-12">
-              <a
-                href="https://github.com/Vendettaa666/Vendettaa666"
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-                aria-label="GitHub"
-              >
-                <i className="ri-github-line ri-2x"></i>
-              </a>
-              <a
-                href="https://instagram.com/leoosatriaa"
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-                aria-label="LinkedIn"
-              >
-                <i className="ri-instagram-line ri-2x"></i>
-              </a>
-              <a
-                href="https://discord.com/users/770242596945395712"
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <i className="ri-discord-line ri-2x"></i>
-              </a>
-              <a
-                href="https://tiktok.com/@vendettaa.666"
-                className="text-slate-400 hover:text-blue-400 transition-colors duration-300"
-                aria-label="Instagram"
-              >
-                <i className="ri-tiktok-line ri-2x"></i>
-              </a>
-            </div>
-          </div>
-
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative">
-              <img
-                src={DataImage.HeroImage}
-                alt="Leo Satria - Full Stack Developer"
-                className="w-64 sm:w-80 lg:w-96 xl:w-[400px] rounded-2xl shadow-2xl"
-                loading="lazy"
-              />
-              {/* Decorative elements */}
-              <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>
-              <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div>
-            </div>
-          </div>
           </div>
         </div>
       </div>
       {/* About */}
-      <div id="about" className="about mt-32 py-10">
+      <div id="about" className="about mt-32 py-10 px-10">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-slate-800 rounded-lg " data-aos="fade-up">
           <img
             src={DataImage.HeroImage}
@@ -191,7 +191,7 @@ function App() {
       </div>
 
       {/* Skills */}
-      <div id="skills" className="skills mt-32 py-10">
+      <div id="skills" className="skills mt-32 py-10 px-10">
         <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">Skills</h1>
         <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto" data-aos="fade-up">
           Keahlian teknis dan non-teknis yang saya miliki dalam pengembangan web
@@ -353,7 +353,7 @@ function App() {
       </div>
 
       {/* proyek */}
-      <div id="proyek" className="proyek mt-32 py-10">
+      <div id="proyek" className="proyek mt-32 py-10 px-10">
         <h1 className="text-center text-4xl font-bold mb-2 " data-aos="fade-up">Proyek</h1>
         <p className="text-base/loose text-center opacity-50 " data-aos="fade-up">
           Beberapa proyek Front end yang saya kerjakan
@@ -402,7 +402,7 @@ function App() {
       </div>
 
       {/* Contact */}
-      <div id="kontak" className="kontak mt-64 py-10">
+      <div id="kontak" className="kontak mt-64 py-10 px-10">
         <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">Contact</h1>
         <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto mb-14" data-aos="fade-up">
           Mari berdiskusi tentang proyek Anda. Saya siap membantu mewujudkan ide
@@ -537,10 +537,6 @@ function App() {
           </div> */}
         </div>
 
-        {/* Footer
-        <div className="mt-16 pt-8 border-t border-slate-700 text-center">
-          <p className="opacity-50">© 2025 Leo Satria. All rights reserved.</p>
-        </div> */}
       </div>
     </>
   );
