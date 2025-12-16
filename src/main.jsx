@@ -8,7 +8,7 @@ import 'remixicon/fonts/remixicon.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='container mx-auto'>
+    <div>
     <Navbar />
     <App />
     <Footer />

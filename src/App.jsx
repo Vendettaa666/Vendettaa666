@@ -34,7 +34,7 @@ function App() {
           />
 
           {/* Gradient Overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/70"></div>
         </div>
 
         {/* Content Container */}
@@ -123,8 +123,8 @@ function App() {
                   loading="lazy"
                 />
                 {/* Decorative elements */}
-                <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>
-                <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div>
+                {/* <div className="absolute -z-10 top-4 left-4 w-full h-full bg-blue-500/20 rounded-2xl"></div>   */}
+                {/* <div className="absolute -z-20 top-8 left-8 w-full h-full bg-cyan-500/10 rounded-2xl"></div> */}
               </div>
             </div>
           </div>
