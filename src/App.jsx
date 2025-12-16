@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // <-- CSS untuk animasi
 import FloatingLines from "./components/FloatingLine";
 import Particles from "./components/Particle";
+import ElectricBorder from "./components/ElectricBorder";
 
 
 function App() {
@@ -140,7 +141,16 @@ function App() {
       </div>
       {/* About */}
       <div id="about" className="about mt-32 py-10 px-10">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-slate-800 rounded-lg " data-aos="fade-up">
+        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto" data-aos="fade-up">
+          <ElectricBorder 
+            color="#00c6d0ff"
+            speed={0.6}
+            chaos={0.5}
+            thickness={2}
+            style={{ borderRadius: '0.5rem' }}
+            className="w-full p-1"
+          >
+            <div className="p-7 bg-slate-800 rounded-lg overflow-hidden">
           <img
             src={DataImage.HeroImage}
             alt="Hero Image"
@@ -170,6 +180,9 @@ function App() {
               </div>
             </div>
           </div>
+
+            </div>
+          </ElectricBorder>
         </div>
 
         <div className="tools mt-32">
