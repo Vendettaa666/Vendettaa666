@@ -144,7 +144,7 @@ function App() {
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto" data-aos="fade-up">
           <ElectricBorder 
             color="#00c6d0ff"
-            speed={0.6}
+            speed={0.2}
             chaos={0.5}
             thickness={2}
             style={{ borderRadius: '0.5rem' }}
