@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // <-- CSS untuk animasi
 import FloatingLines from "./components/FloatingLine";
+import Particles from "./components/Particle";
+
 
 function App() {
   useEffect(() => {
@@ -22,19 +24,26 @@ function App() {
         className="hero relative min-h-screen flex items-center px-10"
       >
         {/* Background FloatingLines Effect */}
-        {/* <div className="absolute inset-0 z-0">
-          <FloatingLines
-            enabledWaves={['top', 'middle', 'bottom']}
-            lineCount={[12, 18, 24]}
-            lineDistance={[8, 6, 4]}
-            bendRadius={6.0}
-            bendStrength={-0.4}
-            interactive={true}
-            parallax={true}
+        <div className="absolute inset-0 z-0">
+            <Particles
+            particleColors={[     
+            '#ffffff', // pure star light
+            '#f8f9fa', // soft white
+            '#ffe066', // golden star
+            '#ffd43b', // bright gold
+            '#e9ecef', // subtle glow
+              ]}
+            particleCount={600}
+            particleSpread={12}
+            speed={0.08}
+            particleBaseSize={80}
+            alphaParticles={true}
+            moveParticlesOnHover={true}
+            disableRotation={false}
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/70"></div>
-        </div> */}
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/70"></div> */}
+        </div>
 
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
