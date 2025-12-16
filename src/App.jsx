@@ -22,7 +22,7 @@ function App() {
         className="hero relative min-h-screen flex items-center px-10"
       >
         {/* Background FloatingLines Effect */}
-        <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0">
           <FloatingLines
             enabledWaves={['top', 'middle', 'bottom']}
             lineCount={[12, 18, 24]}
@@ -33,9 +33,8 @@ function App() {
             parallax={true}
           />
 
-          {/* Gradient Overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/70"></div>
-        </div>
+        </div> */}
 
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
