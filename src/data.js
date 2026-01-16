@@ -145,6 +145,7 @@ import Proyek2 from "/assets/proyek/simpadwebsite.png";
 import Proyek3 from "/assets/proyek/smestawebsite.png";
 import Proyek4 from "/assets/proyek/misiwebsite.png";
 import Proyek5 from "/assets/proyek/websitesagti.png";
+import Proyek6 from "/assets/proyek/cvalpanagrojaya.png"
 // import Proyek6 from "/assets/proyek/proyek6.webp";
 
 export const listProyek = [
@@ -197,5 +198,15 @@ export const listProyek = [
     dad: "600",
     url: "https://staging-depo.nusantaratama.com/",
     note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
+  },
+   {
+    id: 6,
+    gambar: Proyek6,
+    nama: "Alpan Agro Jaya",
+    desk: "Perusahaan yang bergerak di bidang agribisnis, dengan fokus pada pengadaan, pengolahan, dan pemasaran hasil pertanian kepada konsumen akhir.",
+    tools: ["Next JS", "Tailwind", "Javascript", "Node JS"],
+    dad: "700",
+    url: "https://alpan-agro-jaya.vercel.app",
+    note: "Note: Prjoect Company Profile Statis dengan Next JS."
   },
 ];
