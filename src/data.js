@@ -101,14 +101,14 @@ export const listTools = [
     ket: "Design App",
     dad: "1100",
   },
-    {
+  {
     id: 12,
     gambar: Tools12,
     nama: "Mysql",
     ket: "Database",
     dad: "1200",
   },
-    {
+  {
     id: 13,
     gambar: Tools13,
     nama: "PostresSql",
@@ -136,16 +136,16 @@ export const listTools = [
     ket: "Framework",
     dad: "1600",
   },
-
 ];
-
 
 import Proyek1 from "/assets/proyek/bukutahunansiswa.png";
 import Proyek2 from "/assets/proyek/simpadwebsite.png";
 import Proyek3 from "/assets/proyek/smestawebsite.png";
 import Proyek4 from "/assets/proyek/misiwebsite.png";
 import Proyek5 from "/assets/proyek/websitesagti.png";
-import Proyek6 from "/assets/proyek/cvalpanagrojaya.png"
+import Proyek6 from "/assets/proyek/empowerin.png";
+import Proyek7 from "/assets/proyek/cvalpanagrojaya.png";
+
 // import Proyek6 from "/assets/proyek/proyek6.webp";
 
 export const listProyek = [
@@ -157,9 +157,9 @@ export const listProyek = [
     tools: ["HTML", "CSS", "Javascript", "PHP"],
     dad: "200",
     url: "https://jurnalistik.smkn1lmj.sch.id/bts-smk/",
-    note: "Note: This project is a school assignment and is not a commercial project."
+    note: "Note: This project is a school assignment and is not a commercial project.",
   },
-   {
+  {
     id: 2,
     gambar: Proyek2,
     nama: "Website Simpad",
@@ -167,9 +167,9 @@ export const listProyek = [
     tools: ["Laravel", "Bootstrap", "Javascript", "PHP"],
     dad: "300",
     url: "https://staging-simpadkuduskab.nusantaratama.com/",
-    note: "Note: Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
+    note: "Note: Project Magang Mengganti FRONT END dan Menambah beberapa Fitur.",
   },
-   {
+  {
     id: 3,
     gambar: Proyek3,
     nama: "Smesta Website",
@@ -177,9 +177,9 @@ export const listProyek = [
     tools: ["Laravel", "Tailwind", "Javascript", "PHP"],
     dad: "400",
     url: "https://staging-smesta.nusantaratama.com/",
-    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
+    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur.",
   },
-   {
+  {
     id: 4,
     gambar: Proyek4,
     nama: "Misi Website",
@@ -187,9 +187,9 @@ export const listProyek = [
     tools: ["Laravel", "Bootstrap", "Javascript", "PHP"],
     dad: "500",
     url: "https://dev-misi.nusantaratama.com/",
-    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
+    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur.",
   },
-   {
+  {
     id: 5,
     gambar: Proyek5,
     nama: "Website Sagti",
@@ -197,16 +197,26 @@ export const listProyek = [
     tools: ["Laravel", "Tailwind", "Javascript", "PHP"],
     dad: "600",
     url: "https://staging-depo.nusantaratama.com/",
-    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur."
+    note: "Note:  Project Magang Mengganti FRONT END dan Menambah beberapa Fitur.",
   },
-   {
+  {
     id: 6,
     gambar: Proyek6,
-    nama: "Alpan Agro Jaya",
-    desk: "Perusahaan yang bergerak di bidang agribisnis, dengan fokus pada pengadaan, pengolahan, dan pemasaran hasil pertanian kepada konsumen akhir.",
-    tools: ["Next JS", "Tailwind", "Javascript", "Node JS"],
+    nama: "Empowerin",
+    desk: "APLIKASI BAKTI SOSIAL DAN PELATIHAN",
+    tools: ["Laravel", "Tailwind", "Javascript", "PHP"],
     dad: "700",
+    url: "https://staging-empowerin.tamaramanagement.co.id/",
+    note: "Note:  Project Website Internal CV. Nusantara Tama.",
+  },
+  {
+    id: 7,
+    gambar: Proyek7,
+    nama: "Alpan Agro Jaya",
+    desk: "Company Profile Alpan Agro Jaya",
+    tools: ["Next JS", "Tailwind", "Javascript", "Node JS"],
+    dad: "800",
     url: "https://alpan-agro-jaya.vercel.app",
-    note: "Note: Prjoect Company Profile Statis dengan Next JS."
+    note: "Note: Prjoect Company Profile Statis dengan Next JS.",
   },
 ];
