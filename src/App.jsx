@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'; // <-- CSS untuk animasi
 import FloatingLines from "./components/FloatingLine";
 import Particles from "./components/Particle";
 import ElectricBorder from "./components/ElectricBorder";
+import SplashCursor from "./components/SplashCursor";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <>
+      <SplashCursor />
       <div
         id="hero"
         className="hero relative min-h-screen flex items-center px-10"
@@ -142,14 +144,14 @@ function App() {
       {/* About */}
       <div id="about" className="about mt-32 py-10 px-10">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto" data-aos="fade-up">
-          <ElectricBorder 
+          {/* <ElectricBorder 
             color="#00c6d0ff"
             speed={0.2}
             chaos={0.5}
             thickness={2}
             style={{ borderRadius: '0.5rem' }}
             className="w-full p-1"
-          >
+          > */}
             <div className="p-7 bg-slate-800 rounded-lg overflow-hidden">
           <img
             src={DataImage.HeroImage}
@@ -182,7 +184,7 @@ function App() {
           </div>
 
             </div>
-          </ElectricBorder>
+          {/* </ElectricBorder> */}
         </div>
 
         <div className="tools mt-32">
@@ -559,6 +561,7 @@ function App() {
         </div>
 
       </div>
+      
     </>
   );
 }
