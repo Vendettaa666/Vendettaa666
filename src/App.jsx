@@ -7,6 +7,7 @@ import FloatingLines from "./components/FloatingLine";
 import Particles from "./components/Particle";
 import ElectricBorder from "./components/ElectricBorder";
 import SplashCursor from "./components/SplashCursor";
+import ProfileCard from './components/ProfileCard'
 
 
 function App() {
@@ -127,6 +128,24 @@ function App() {
 
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative">
+                
+                {/* <ProfileCard
+                className="w-64 sm:w-80 lg:w-96 xl:w-[400px]"
+                  name="Javi A. Torres"
+                  title="Software Engineer"
+                  handle="javicodes"
+                  status="Online"
+                  contactText="Contact Me"
+                  avatarUrl={DataImage.HeroImage}
+                  showUserInfo={false}
+                  enableTilt={true}
+                  enableMobileTilt={false}
+                  onContactClick={() => console.log('Contact clicked')}
+                  showIcon
+                  showBehindGlow
+                  behindGlowColor="rgba(125, 190, 255, 0.67)"
+                  customInnerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+                /> */}
                 <img
                   src={DataImage.HeroImage}
                   alt="Leo Satria - Full Stack Developer"
