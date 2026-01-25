@@ -145,6 +145,7 @@ import Proyek4 from "/assets/proyek/misiwebsite.png";
 import Proyek5 from "/assets/proyek/websitesagti.png";
 import Proyek6 from "/assets/proyek/empowerin.png";
 import Proyek7 from "/assets/proyek/cvalpanagrojaya.png";
+import Proyek8 from "/assets/proyek/blessingstore.png"
 
 // import Proyek6 from "/assets/proyek/proyek6.webp";
 
@@ -217,6 +218,16 @@ export const listProyek = [
     tools: ["Next JS", "Tailwind", "Javascript", "Node JS"],
     dad: "800",
     url: "https://alpan-agro-jaya.vercel.app",
+    note: "Note: Prjoect Company Profile Statis dengan Next JS.",
+  },
+  {
+    id: 8,
+    gambar: Proyek8,
+    nama: "Blessing Store",
+    desk: "Company Profile Blessing Store",
+    tools: ["Next JS", "Tailwind", "Javascript", "Node JS"],
+    dad: "900",
+    url: "https://praktikum-sizie.vercel.app/",
     note: "Note: Prjoect Company Profile Statis dengan Next JS.",
   },
 ];
