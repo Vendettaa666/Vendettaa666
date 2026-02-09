@@ -68,7 +68,7 @@ function App() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
-                {t('hero.greeting')}<span className="text-blue-400">Leo Satria</span>
+                {t('hero.greeting')}<span className="text-blue-400"> Leo Satria</span>
               </h1>
 
               <h2 className="text-lg sm:text-xl lg:text-2xl text-cyan-300 font-semibold mb-4 lg:mb-6">
