@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "skills": "Keahlian",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "cv": "Unduh CV"
+  },
+  "hero": {
+    "badge": "Pengembang Front End",
+    "greeting": "Halo, Saya",
+    "role": "Pengembang Front End",
+    "description": "🚀 Pengembang otodidak yang antusias dengan Laravel, Flutter, dan teknologi baru. 🎸 Musik memicu kreativitas saya, terutama genre gelap & atmosferik seperti NU metal & DSBM. ☕ Saya paling produktif ditemani es kopi dan musik keras saat coding. 🤝 Selalu terbuka untuk kolaborasi, belajar, dan menghadapi tantangan baru!",
+    "contactBtn": "Hubungi Saya",
+    "projectBtn": "Lihat Proyek"
+  },
+  "about": {
+    "bio": "Saya adalah siswa di SMKN 1 Lumajang. Saya berusia 18 tahun dan memilih jurusan Rekayasa Perangkat Lunak karena sesuai dengan minat saya untuk menjadi full-stack programmer. Saat ini saya sedang magang di",
+    "projects_completed": "Proyek Selesai",
+    "years_experience": "Tahun Pengalaman"
+  },
+  "tools": {
+    "title": "Tools Yang Dipakai",
+    "desc": "Berikut tools yang dipakai dalam membuat website"
+  },
+  "skills": {
+    "title": "Keahlian",
+    "desc": "Keahlian teknis dan non-teknis yang saya miliki dalam pengembangan web",
+    "technical": "Keahlian Teknis"
+  },
+  "projects": {
+    "title": "Proyek",
+    "desc": "Beberapa proyek Front End yang saya kerjakan",
+    "view_site": "Lihat Website"
+  },
+  "contact": {
+    "title": "Kontak",
+    "desc": "Mari berdiskusi tentang proyek Anda. Saya siap membantu mewujudkan ide digital Anda.",
+    "get_touch": "Hubungi Saya",
+    "follow": "Ikuti Saya"
+  }
+}

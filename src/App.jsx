@@ -8,9 +8,11 @@ import Particles from "./components/Particle";
 import ElectricBorder from "./components/ElectricBorder";
 import SplashCursor from "./components/SplashCursor";
 import ProfileCard from './components/ProfileCard'
+import { useTranslation } from "react-i18next";
 
 
 function App() {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
       duration: 800,        // durasi animasi (ms)
@@ -19,6 +21,8 @@ function App() {
       mirror: false         // jangan animasi ulang saat scroll ke atas
     });
   }, []);
+
+  
 
   return (
     <>
@@ -60,22 +64,19 @@ function App() {
                   className="w-8 sm:w-10 rounded-md"
                   loading="lazy"
                 />
-                <q className="text-xs sm:text-sm">Front end Developer</q>
+                <q className="text-xs sm:text-sm">{t('hero.badge')}</q>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
-                Hi, Saya <span className="text-blue-400">Leo Satria</span>
+                {t('hero.greeting')}<span className="text-blue-400">Leo Satria</span>
               </h1>
 
               <h2 className="text-lg sm:text-xl lg:text-2xl text-cyan-300 font-semibold mb-4 lg:mb-6">
-                Front end Developer
+                {t('hero.role')}
               </h2>
 
               <p className="text-sm sm:text-base leading-relaxed mb-6 lg:mb-8 opacity-75 max-w-lg mx-auto lg:mx-0">
-                🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech.
-                🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM.
-                ☕ I thrive on iced coffee and loud riffs while coding.
-                🤝 Always open to collaboration, learning, and tackling new challenges!
+                {t('hero.description')}
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
@@ -83,13 +84,13 @@ function App() {
                   href="#kontak"
                   className="w-full sm:w-auto bg-blue-600 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-blue-500 transition-colors duration-300 font-semibold text-center"
                 >
-                  Contact Me <i className="ri-message-line ri-lg ml-2"></i>
+                  {t('hero.contactBtn')} <i className="ri-message-line ri-lg ml-2"></i>
                 </a>
                 <a
                   href="#proyek"
                   className="w-full sm:w-auto bg-slate-700 px-6 py-3 lg:px-8 lg:py-4 rounded-2xl hover:bg-slate-600 transition-colors duration-300 font-semibold text-center"
                 >
-                  Lihat Proyek <i className="ri-arrow-down-line ri-lg ml-2"></i>
+                {t('hero.projectBtn')} <i className="ri-arrow-down-line ri-lg ml-2"></i>
                 </a>
               </div>
 
@@ -178,7 +179,7 @@ function App() {
             className="w-12 rounded-md mb-10 sm:hidden"
           />
           <p className="text-base/loose mb-10">
-            I am a student at SMKN 1 Lumajang. I am 18 years old and chose to major in Software Engineering because the RPL major aligns with my interests in becoming a full-stack programmer. I am currently interning at <a href="https://nusantaratama.com/" className="text-cyan-300">NUSANTARATAMA.COM</a>
+            {t('about.bio')} <a href="https://nusantaratama.com/" className="text-cyan-300">NUSANTARATAMA.COM</a>
           </p>
           <div className="flex items-center justify-between">
             <img
@@ -191,13 +192,13 @@ function App() {
                 <h1 className="text-4xl mb-1 ">
                   4<span className="text-blue-500"></span>
                 </h1>
-                <p>Proyek Selesai</p>
+                <p>{t('about.projects_completed')}</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1 ">
                   1 <span className="text-blue-500">+</span>
                 </h1>
-                <p>Tahun Pengalaman</p>
+                <p>{t('about.years_experience')}</p>
               </div>
             </div>
           </div>
@@ -234,16 +235,16 @@ function App() {
 
       {/* Skills */}
       <div id="skills" className="skills mt-32 py-10 px-10">
-        <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">Skills</h1>
+        <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">{t('skills.title')}</h1>
         <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto" data-aos="fade-up">
-          Keahlian teknis dan non-teknis yang saya miliki dalam pengembangan web
+          {t('skills.desc')}
         </p>
 
         <div className="skills-container mt-14 grid lg:grid-cols-2 grid-cols-1 gap-8">
           {/* Technical Skills */}
           <div className="p-6 bg-slate-800 rounded-lg" data-aos="fade-up">
             <h2 className="text-2xl font-bold mb-6 text-blue-400" >
-              Technical Skills
+              {t('skills.technical')}
             </h2>
             <div className="space-y-4">
               <div>
@@ -396,9 +397,9 @@ function App() {
 
       {/* proyek */}
       <div id="proyek" className="proyek mt-32 py-10 px-10">
-        <h1 className="text-center text-4xl font-bold mb-2 " data-aos="fade-up">Proyek</h1>
+        <h1 className="text-center text-4xl font-bold mb-2 " data-aos="fade-up">{t('projects.title')}</h1>
         <p className="text-base/loose text-center opacity-50 " data-aos="fade-up">
-          Beberapa proyek Front end yang saya kerjakan
+          {t('projects.desc')}
         </p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
@@ -434,7 +435,7 @@ function App() {
                     href={proyek.url}
                     className="bg-blue-600 p-4 rounded-lg block border border-slate-600 hover:bg-blue-500 transition-colors"
                   >
-                    Lihat website
+                    {t('projects.view_site')}
                   </a>
                 </div>
               </div>
@@ -445,10 +446,9 @@ function App() {
 
       {/* Contact */}
       <div id="kontak" className="kontak mt-64 py-10 px-10">
-        <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">Contact</h1>
+        <h1 className="text-center text-4xl font-bold mb-4" data-aos="fade-up">{t('contact.title')}</h1>
         <p className="text-base/loose text-center opacity-50 xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full mx-auto mb-14" data-aos="fade-up">
-          Mari berdiskusi tentang proyek Anda. Saya siap membantu mewujudkan ide
-          digital Anda
+        {t('contact.desc')}
         </p>
 
         <div className="contact-container flex justify-center items-center mx-auto">
@@ -456,7 +456,7 @@ function App() {
           <div className="space-y-6 w-full max-w-3xl">
             <div className="p-6 bg-slate-800 rounded-lg" data-aos="fade-up">
               <h2 className="text-2xl font-bold mb-6 text-blue-400">
-                Get In Touch
+               {t('contact.get_touch')}
               </h2>
 
               <div className="space-y-4">
@@ -487,7 +487,7 @@ function App() {
 
               {/* Social Links */}
               <div className="mt-8">
-                <h3 className="font-semibold mb-4">Follow Me</h3>
+                <h3 className="font-semibold mb-4">{t('contact.follow')}</h3>
                 <div className="flex gap-4">
                   <a
                     href="https://github.com/Vendettaa666/Vendettaa666"

@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cv": "Download CV"
+  },
+  "hero": {
+    "badge": "Front End Developer",
+    "greeting": "Hi, I am",
+    "role": "Front End Developer",
+    "description": "🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech. 🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM. ☕ I thrive on iced coffee and loud riffs while coding. 🤝 Always open to collaboration, learning, and tackling new challenges!",
+    "contactBtn": "Contact Me",
+    "projectBtn": "View Projects"
+  },
+  "about": {
+    "bio": "I am a student at SMKN 1 Lumajang. I am 18 years old and chose to major in Software Engineering because the RPL major aligns with my interests in becoming a full-stack programmer. I am currently interning at",
+    "projects_completed": "Projects Completed",
+    "years_experience": "Years of Experience"
+  },
+  "tools": {
+    "title": "Tools Used",
+    "desc": "Here are the tools used in website creation"
+  },
+  "skills": {
+    "title": "Skills",
+    "desc": "Technical and non-technical skills I possess in web development",
+    "technical": "Technical Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "desc": "Some Front End projects I've worked on",
+    "view_site": "Visit Website"
+  },
+  "contact": {
+    "title": "Contact",
+    "desc": "Let's discuss your project. I am ready to help realize your digital ideas.",
+    "get_touch": "Get In Touch",
+    "follow": "Follow Me"
+  }
+}
