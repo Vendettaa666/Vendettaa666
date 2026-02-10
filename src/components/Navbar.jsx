@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitch from "./LanguageSwitch";
 
@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+      className={`fixed top-0 w-full z-100 transition-all duration-300 ${isScrolled
         ? "bg-zinc-900/90 backdrop-blur-md border-b border-white/10 shadow-lg"
         : "bg-transparent py-4"
         }`}
@@ -68,7 +68,7 @@ const Navbar = () => {
           className="flex-shrink-0 cursor-pointer z-50"
           onClick={(e) => handleClick(e, "hero")}
         >
-          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
+          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-500 to-blue-400 bg-clip-text text-transparent">
             Portofolio
           </h1>
         </div>
@@ -80,14 +80,14 @@ const Navbar = () => {
                 <a
                   href={`#${link.id}`}
                   onClick={(e) => handleClick(e, link.id)}
-                  className={`relative text-sm font-medium transition-colors duration-300 hover:text-violet-400 ${activeSection === link.id
-                    ? "text-violet-400"
+                  className={`relative text-sm font-medium transition-colors duration-300 hover:text-blue-400 ${activeSection === link.id
+                    ? "text-blue-400"
                     : "text-gray-300"
                     }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute -bottom-1 left-0 h-0.5 bg-violet-400 transition-all duration-300 ${activeSection === link.id ? "w-full" : "w-0"
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-blue-400 transition-all duration-300 ${activeSection === link.id ? "w-full" : "w-0"
                       }`}
                   ></span>
                 </a>
@@ -100,7 +100,7 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <a
               href="#"
-              className="px-5 py-2.5 rounded-full bg-violet-600 hover:bg-violet-700 text-white text-sm font-bold transition-all hover:shadow-[0_0_15px_rgba(124,58,237,0.4)] active:scale-95"
+              className="px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold transition-all hover:shadow-[0_0_15px_rgba(124,58,237,0.4)] active:scale-95"
             >
               {t("nav.cv")}
             </a><LanguageSwitch />
@@ -132,7 +132,7 @@ const Navbar = () => {
                 href={`#${link.id}`}
                 onClick={(e) => handleClick(e, link.id)}
                 className={`block py-2 text-lg font-medium transition-colors ${activeSection === link.id
-                  ? "text-violet-400"
+                  ? "text-blue-400"
                   : "text-gray-300"
                   }`}
               >
@@ -147,7 +147,7 @@ const Navbar = () => {
             </div>
             <a
               href="#"
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold shadow-lg w-3/4 text-center"
+              className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold shadow-lg w-3/4 text-center"
             >
               {t("nav.cv")}
             </a>
