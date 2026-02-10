@@ -59,8 +59,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-          ? "bg-zinc-900/90 backdrop-blur-md border-b border-white/10 shadow-lg"
-          : "bg-transparent py-4"
+        ? "bg-zinc-900/90 backdrop-blur-md border-b border-white/10 shadow-lg"
+        : "bg-transparent py-4"
         }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center h-16 md:h-20">
@@ -81,8 +81,8 @@ const Navbar = () => {
                   href={`#${link.id}`}
                   onClick={(e) => handleClick(e, link.id)}
                   className={`relative text-sm font-medium transition-colors duration-300 hover:text-violet-400 ${activeSection === link.id
-                      ? "text-violet-400"
-                      : "text-gray-300"
+                    ? "text-violet-400"
+                    : "text-gray-300"
                     }`}
                 >
                   {link.label}
@@ -104,7 +104,7 @@ const Navbar = () => {
             >
               {t("nav.cv")}
             </a><LanguageSwitch />
-            
+
           </div>
         </div>
 
@@ -132,8 +132,8 @@ const Navbar = () => {
                 href={`#${link.id}`}
                 onClick={(e) => handleClick(e, link.id)}
                 className={`block py-2 text-lg font-medium transition-colors ${activeSection === link.id
-                    ? "text-violet-400"
-                    : "text-gray-300"
+                  ? "text-violet-400"
+                  : "text-gray-300"
                   }`}
               >
                 {link.label}
@@ -142,16 +142,16 @@ const Navbar = () => {
           ))}
 
           <div className="flex flex-col items-center gap-4 mt-6 w-full">
-
+            <div className="scale-110">
+              <LanguageSwitch />
+            </div>
             <a
               href="#"
               className="px-8 py-3 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold shadow-lg w-3/4 text-center"
             >
               {t("nav.cv")}
             </a>
-            <div className="scale-110">
-              <LanguageSwitch />
-            </div>
+
           </div>
         </ul>
       </div>

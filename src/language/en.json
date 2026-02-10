@@ -8,9 +8,9 @@
     "cv": "Download CV"
   },
   "hero": {
-    "badge": "Front End Developer",
+    "badge": "Web Developer",
     "greeting": "Hi, I am",
-    "role": "Front End Developer",
+    "role": "Web Developer",
     "description": "🚀 Self-taught developer passionate about Laravel, Flutter, and exploring new tech. 🎸 Music fuels my creativity especially dark, atmospheric, and heavy genres like NU metal & DSBM. ☕ I thrive on iced coffee and loud riffs while coding. 🤝 Always open to collaboration, learning, and tackling new challenges!",
     "contactBtn": "Contact Me",
     "projectBtn": "View Projects"
@@ -31,7 +31,7 @@
   },
   "projects": {
     "title": "Projects",
-    "desc": "Some Front End projects I've worked on",
+    "desc": "Some Web projects I've worked on",
     "view_site": "Visit Website"
   },
   "contact": {

@@ -8,9 +8,9 @@
     "cv": "Unduh CV"
   },
   "hero": {
-    "badge": "Pengembang Front End",
+    "badge": "Pengembang Web",
     "greeting": "Halo, Saya",
-    "role": "Pengembang Front End",
+    "role": "Pengembang Web",
     "description": "🚀 Pengembang otodidak yang antusias dengan Laravel, Flutter, dan teknologi baru. 🎸 Musik memicu kreativitas saya, terutama genre gelap & atmosferik seperti NU metal & DSBM. ☕ Saya paling produktif ditemani es kopi dan musik keras saat coding. 🤝 Selalu terbuka untuk kolaborasi, belajar, dan menghadapi tantangan baru!",
     "contactBtn": "Hubungi Saya",
     "projectBtn": "Lihat Proyek"
@@ -31,7 +31,7 @@
   },
   "projects": {
     "title": "Proyek",
-    "desc": "Beberapa proyek Front End yang saya kerjakan",
+    "desc": "Beberapa proyek Web yang saya kerjakan",
     "view_site": "Lihat Website"
   },
   "contact": {
