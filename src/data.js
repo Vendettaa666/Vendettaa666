@@ -145,7 +145,8 @@ import Proyek4 from "/assets/proyek/misiwebsite.png";
 import Proyek5 from "/assets/proyek/websitesagti.png";
 import Proyek6 from "/assets/proyek/empowerin.png";
 import Proyek7 from "/assets/proyek/cvalpanagrojaya.png";
-import Proyek8 from "/assets/proyek/blessingstore.png"
+import Proyek8 from "/assets/proyek/blessingstore.png";
+import Proyek9 from "/assets/proyek/webujian.png";
 
 // import Proyek6 from "/assets/proyek/proyek6.webp";
 
@@ -229,5 +230,15 @@ export const listProyek = [
     dad: "900",
     url: "https://praktikum-sizie.vercel.app/",
     note: "Note: Prjoect Company Profile Statis dengan Next JS.",
+  },
+    {
+    id: 9,
+    gambar: Proyek9,
+    nama: "Value Academy",
+    desk: "Website Ujian Value Academy",
+    tools: ["Laravel", "Tailwind", "Javascript", "Node Js"],
+    dad: "900",
+    url: "https://ourvalueacademy.com/",
+    note: "Note: Website Ujian Menggunakan Laravel 12 dan Tailwind.",
   },
 ];
