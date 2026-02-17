@@ -27,7 +27,10 @@ import Tools18 from "/assets/tools/alpinejs.png";
 import Tools19 from "/assets/tools/filament.png";
 import Tools20 from "/assets/tools/livewire.png";
 import Tools21 from "/assets/tools/postman.png";
-
+import Tools22 from "/assets/tools/vite.png";
+import Tools23 from "/assets/tools/type-script.png";
+import Tools24 from "/assets/tools/npm.png";
+import Tools25 from "/assets/tools/composer.png";
 
 export const listTools = [
   {
@@ -177,6 +180,34 @@ export const listTools = [
     ket: "API Testing",
     dad: "2100",
   },
+  {
+    id: 22,
+    gambar: Tools22,
+    nama: "Vite",
+    ket: "Build Tool",
+    dad: "2200",
+  },
+  {
+    id: 23,
+    gambar: Tools23,
+    nama: "Type Script",
+    ket: "Language",
+    dad: "2300",
+  },
+  {
+    id: 24,
+    gambar: Tools24,
+    nama: "NPM",
+    ket: "Package Manager",
+    dad: "2500",
+  },
+  {
+    id: 25,
+    gambar: Tools25,
+    nama: "Composer",
+    ket: "Package Manager",
+    dad: "2400",
+  },
 ];
 
 import Proyek1 from "/assets/proyek/bukutahunansiswa.png";
@@ -272,7 +303,7 @@ export const listProyek = [
     url: "https://praktikum-sizie.vercel.app/",
     note: "Note: Prjoect Company Profile Statis dengan Next JS.",
   },
-    {
+  {
     id: 9,
     gambar: Proyek9,
     nama: "Value Academy",
