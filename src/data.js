@@ -14,7 +14,7 @@ import Tools5 from "/assets/tools/bootstrap.png";
 import Tools6 from "/assets/tools/js.png";
 import Tools7 from "/assets/tools/nodejs.png";
 import Tools8 from "/assets/tools/github.png";
-// import Tools9 from "/assets/tools/ai.png";
+import Tools9 from "/assets/tools/inertiajs.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/mysql.png";
@@ -22,6 +22,12 @@ import Tools13 from "/assets/tools/postgressql.png";
 import Tools14 from "/assets/tools/dart.png";
 import Tools15 from "/assets/tools/laravel.png";
 import Tools16 from "/assets/tools/flutter.png";
+import Tools17 from "/assets/tools/php.png";
+import Tools18 from "/assets/tools/alpinejs.png";
+import Tools19 from "/assets/tools/filament.png";
+import Tools20 from "/assets/tools/livewire.png";
+import Tools21 from "/assets/tools/postman.png";
+
 
 export const listTools = [
   {
@@ -80,13 +86,13 @@ export const listTools = [
     ket: "Repository",
     dad: "800",
   },
-  // {
-  //   id: 9,
-  //   gambar: Tools9,
-  //   nama: "Adobe Illustrator",
-  //   ket: "Design App",
-  //   dad: "900",
-  // },
+  {
+    id: 9,
+    gambar: Tools9,
+    nama: "Inertia JS",
+    ket: "Framework",
+    dad: "900",
+  },
   {
     id: 10,
     gambar: Tools10,
@@ -135,6 +141,41 @@ export const listTools = [
     nama: "Flutter",
     ket: "Framework",
     dad: "1600",
+  },
+  {
+    id: 17,
+    gambar: Tools17,
+    nama: "PHP",
+    ket: "Language",
+    dad: "1700",
+  },
+  {
+    id: 18,
+    gambar: Tools18,
+    nama: "Alpine JS",
+    ket: "Framework",
+    dad: "1800",
+  },
+  {
+    id: 19,
+    gambar: Tools19,
+    nama: "Filament",
+    ket: "Framework",
+    dad: "1900",
+  },
+  {
+    id: 20,
+    gambar: Tools20,
+    nama: "Livewire",
+    ket: "Framework",
+    dad: "2000",
+  },
+  {
+    id: 21,
+    gambar: Tools21,
+    nama: "Postman",
+    ket: "API Testing",
+    dad: "2100",
   },
 ];
 
